@@ -5,15 +5,18 @@ import './components.css';
 import Frostatglas from './Frostatglas';
 import Boll from './Boll';
 import InputfältText from './InputfältText';
+import Button from './Button';
 
 function App() {
   return (
     <div className="App">
       <Frostatglas />
-      <InputfältText labeltext="FirstName" placeholder="Maj-Britt Andersson"/>
+      <InputfältText labeltext="FirstName" />
       <Boll bolltyp="blåboll" />
       <Boll bolltyp="grönboll" />
       <Boll bolltyp="gulboll" />
+      <Button className="primärknapp" buttonText="Primär"/>
+      <Button className="sekundärknapp" buttonText="Sekundär" />
     </div>
   );
 }
