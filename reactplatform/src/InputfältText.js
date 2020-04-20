@@ -1,4 +1,5 @@
 import React from 'react';
+import './components.css'
 
 class InputfältText extends React.Component {
     constructor(props) {
@@ -15,11 +16,13 @@ class InputfältText extends React.Component {
        
         render() {
             return (
+                <div className='InputDiv'>
+                    <p className= 'inputlabel'>{this.props.labeltext}</p>
                     <input type="text" 
-                    name={this.props.name} 
-                    placeholder={this.props.placeholder} 
+                    name={this.props.name}
                     onChange={this.handleChange}
                     className="inputfält" />
+                    </div>
             )
         }
      }

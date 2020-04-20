@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    font-family: 'Viga', sans-serif;
+}
+
+.InputDiv{
+    background-color: #6dcf37;
+    height:20px;
+    width:200px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.inputfält{
+width:50%;
+height:60%;
+float:right;
+margin:1px;
+position:absolute;
+right:0px;
+}
+
+.inputlabel {
+    color: white;
+    font-size: 8pt; 
+    position:absolute;
+    left:10px;
+    bottom:-8px;
+   
+}
