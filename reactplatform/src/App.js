@@ -5,7 +5,8 @@ import './components.css';
 import Frostatglas from './Frostatglas';
 import Boll from './Boll';
 import InputfältText from './InputfältText';
-import Button from './Button';
+import PrimaryButton from './PrimaryButton';
+import SecondaryButton from './SecondaryButton';
 
 function App() {
   return (
@@ -15,8 +16,8 @@ function App() {
       <Boll bolltyp="blåboll" />
       <Boll bolltyp="grönboll" />
       <Boll bolltyp="gulboll" />
-      <Button className="primärknapp" buttonText="Primär"/>
-      <Button className="sekundärknapp" buttonText="Sekundär" />
+      <PrimaryButton buttonText="Primär"/>
+      <SecondaryButton buttonText="Sekundär" />
     </div>
   );
 }
