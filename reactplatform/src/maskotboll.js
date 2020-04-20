@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from './logga svart.png';
+import Logo from './maskotbild.png';
 import './components.css';
 
 function MaskotBoll () {
