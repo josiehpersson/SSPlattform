@@ -7,6 +7,7 @@ import Boll from './Boll';
 import InputfältText from './InputfältText';
 import PrimaryButton from './PrimaryButton';
 import SecondaryButton from './SecondaryButton';
+import MaskotBoll from './maskotboll';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Boll bolltyp="gulboll" />
       <PrimaryButton buttonText="Primär"/>
       <SecondaryButton buttonText="Sekundär" />
+      <MaskotBoll />
     </div>
   );
 }

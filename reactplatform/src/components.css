@@ -76,3 +76,19 @@ cursor: pointer;
     top: -1px;
 
 }
+
+.MaskotBoll {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    
+}
+
+.Logotype {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
