@@ -5,7 +5,7 @@ function InputfältText (props) {
 
             return (
                 <div className='InputDiv'>
-                    <p className= 'inputlabel'>{this.props.labeltext}</p>
+                    <p className= 'inputlabel'>{props.labeltext}</p>
                     <input type="text" 
                     name={props.name}
                     value={props.value}

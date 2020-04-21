@@ -1,5 +1,5 @@
 import React from 'react';
-import './Boll.css';
+import './components.css';
 
 function Boll(props) {
   return <div className={props.bolltyp}></div>;
