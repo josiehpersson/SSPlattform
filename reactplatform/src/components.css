@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Viga', sans-serif;
+    width: 100vw;
 }
 
 .InputDiv{
