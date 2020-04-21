@@ -5,7 +5,7 @@ function PrimaryButton (props) {
 return (
   <button type="button" 
   class="btn primärknapp">
-    {props.text}
+    <p>{props.text}</p>
     </button>
 )
 }

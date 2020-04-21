@@ -7,17 +7,19 @@ body {
     background-color: #6dcf37;
     height:20px;
     width:200px;
+    padding: 1px;
     box-sizing: border-box;
+    display: inline-block;
     position: relative;
 }
 
 .inputfält{
 width:50%;
-height:60%;
+height:80%;
 float:right;
-margin:1px;
 position:absolute;
-right:0px;
+right:2px;
+top: 2px;
 }
 
 .inputlabel {
@@ -25,7 +27,7 @@ right:0px;
     font-size: 8pt; 
     position:absolute;
     left:10px;
-    bottom:-8px;
+    bottom:-13px;
    
 }
 
@@ -43,10 +45,11 @@ right:0px;
 .sekundärknapp {
     position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 1px solid #00A2FF !important;
-    color: #3B5360 !important;
-    height: 23px !important;
-    width: 73px !important;
+    border: 1px solid #00A2FF;
+    color: #3B5360;
+    height: 25px;
+    width: 75px;
+    font-size: 8pt;
     cursor: pointer;
 }
 
@@ -63,18 +66,6 @@ right:0px;
     outline: none !important;
     border: none !important;
     box-shadow: none;
-}
-
-.primärknapp > p {
-    font-size: 6pt;
-
-
-}
-.sekundärknapp > p {
-    position: absolute;
-    font-size: 6pt;
-    top: -1px;
-
 }
 
 .MaskotBoll {
