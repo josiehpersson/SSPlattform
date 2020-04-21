@@ -45,17 +45,17 @@ function Header() {
           </a>
           <div class="dropdown-menu menu-dropdown">
             <a class="dropdown-item menulink-dropdown" href="#">
-              ÅTKOMST
+            <i class="fas fa-users-cog"></i>  ÅTKOMST
             </a>
             <a class="dropdown-item menulink-dropdown" href="#">
-              INSTÄLLNINGAR
+            <i class="fas fa-cog"></i>  INSTÄLLNINGAR
             </a>
             <a class="dropdown-item menulink-dropdown" href="#">
-              STATISTIK
+            <i class="far fa-chart-bar"></i> STATISTIK
             </a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item menulink-dropdown" href="#">
-              LOGGA UT
+            <i class="fas fa-sign-out-alt"></i>  LOGGA UT
             </a>
           </div>
         </li>
