@@ -1,0 +1,16 @@
+.login-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.headline {
+  color: #3b5360;
+}
+.signin-form {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  align-items: center;
+}
