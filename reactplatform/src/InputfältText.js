@@ -1,31 +1,22 @@
 import React from 'react';
 import './components.css'
 
-class InputfältText extends React.Component {
-    constructor(props) {
-        super()
-        this.state = {
-            name: ''
-        }
-    }
-        handleChange = (e) => {
-            this.setState({
-                [e.target.name]: e.target.value
-            })
-        }
-       
-        render() {
+function InputfältText (props) {
+
             return (
                 <div className='InputDiv'>
                     <p className= 'inputlabel'>{this.props.labeltext}</p>
                     <input type="text" 
-                    name={this.props.name}
-                    onChange={this.handleChange}
+                    name={props.name}
+                    value={props.value}
+                    onChange={props.onChange}
+                    error={props.error}
+                    disabled={props.isDisabled}
                     className="inputfält" />
                     </div>
             )
         }
-     }
+
 
      export default InputfältText
      
