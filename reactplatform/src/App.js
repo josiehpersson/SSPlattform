@@ -9,21 +9,17 @@ import InputfältText from './InputfältText';
 import PrimaryButton from './PrimaryButton';
 import SecondaryButton from './SecondaryButton';
 import MaskotBoll from './maskotboll';
-import Header from './HEADER/Header';
-import BackgroundDiv from './HEADER/backgroundDiv';
 
 function App() {
   return (
     <div className="App">
-      <BackgroundDiv />
-      <Header />
       <Frostatglas />
       <InputfältText labeltext="FirstName" />
       <Boll bolltyp="blåboll" />
       <Boll bolltyp="grönboll" />
       <Boll bolltyp="gulboll" />
-      <PrimaryButton buttonText="Primär"/>
-      <SecondaryButton buttonText="Sekundär" />
+      <PrimaryButton text="Primär"/>
+      <SecondaryButton text="Sekundär" />
       <MaskotBoll />
     </div>
   );
