@@ -95,8 +95,8 @@ class Register extends React.Component {
             lastName: '',
             phone: '',
             password: '',
-
             });
+            this.props.changeView('login');
     };
 
     render() {

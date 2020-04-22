@@ -11,6 +11,7 @@ import {
   SSPasswordValidator,
   SSCombinedValidator,
 } from '../Components/Validators';
+
 class LoginForm extends React.Component {
   constructor(props) {
     super(props);
@@ -93,11 +94,11 @@ class LoginForm extends React.Component {
 
           <SecondaryButton 
           text="Registrera" 
-          onClick={this.onRegisterClick}
+          onClick={() => this.props.changeView('register')}
           isDisabled={false} 
           id="login-secbutton"/>
         </form>
-        <a className="forgot-link" onClick={this.onForgotClick}>Glömt lösenord?</a>
+        <a className="forgot-link" onClick={() => this.props.changeView('forgot')}>Glömt lösenord?</a>
 
       <MaskotBoll width="150px" height="150px" top="50px" left="350px" />
       <Boll className="gulboll" height="100px" width="100px" left="5px" top="-7px"/>

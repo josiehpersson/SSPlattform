@@ -36,6 +36,7 @@ class Forgotform extends React.Component {
     this.setState({
       mail: '',
     });
+    this.props.changeView('login');
   };
 
   render() {
