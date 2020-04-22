@@ -42,6 +42,13 @@ class LoginForm extends React.Component {
     });
   };
 
+  onForgotClick = () => {
+    console.log('glömt lösenord klickat');
+  }
+
+  onRegisterClick = () => {
+    console.log('registrera klickat!');
+  }
   handleSubmit = () => {
     const data = {
       mail: this.state.mail,
@@ -84,9 +91,13 @@ class LoginForm extends React.Component {
             id="login-primbutton"
           />
 
-          <SecondaryButton text="Registrera" isDisabled={false} id="login-secbutton"/>
+          <SecondaryButton 
+          text="Registrera" 
+          onClick={this.onRegisterClick}
+          isDisabled={false} 
+          id="login-secbutton"/>
         </form>
-        <a className="forgot-link">Glömt lösenord?</a>
+        <a className="forgot-link" onClick={this.onForgotClick}>Glömt lösenord?</a>
 
       <MaskotBoll width="150px" height="150px" top="50px" left="350px" />
       <Boll className="gulboll" height="100px" width="100px" left="5px" top="-7px"/>

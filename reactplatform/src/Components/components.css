@@ -14,6 +14,7 @@ body {
   box-shadow: inset 0px 15px 15px rgba (0, 0, 0, 0.25);
   height: 80vh;
   width: 50vw;
+  box-sizing: border-box;
 }
 
 .InputDiv {
