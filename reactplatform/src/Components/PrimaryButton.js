@@ -9,7 +9,7 @@ function PrimaryButton(props) {
       onClick={props.onClick}
       disabled={props.isDisabled}
     >
-      <p>{props.text}</p>
+      {props.text}
     </button>
   );
 }

@@ -52,7 +52,7 @@ class LoginForm extends React.Component {
   render() {
     return (
       <div className="login-container">
-        <FrostatGlas />
+        <FrostatGlas id="login-glas"/>
 
         <form className="signin-form" onSubmit={this.handleSubmit}>
           <h3 className="headline">Logga in</h3>
@@ -63,6 +63,7 @@ class LoginForm extends React.Component {
             value={this.state.mail}
             onChange={this.onMailChange}
             error={this.mailValidator.invalid}
+            id="login-mailinput"
           />
 
           <Inputfält
@@ -72,17 +73,22 @@ class LoginForm extends React.Component {
             value={this.state.password}
             onChange={this.onPasswordChange}
             error={this.passwordValidator.invalid}
+            id="login-passinput"
           />
 
           <PrimaryButton
             text="Logga in"
             onClick={this.handleSubmit}
             isDisabled={this.formValidator.invalid}
+            id="login-primbutton"
           />
 
-          <SecondaryButton text="Registrera" isDisabled={false} />
+          <SecondaryButton text="Registrera" isDisabled={false} id="login-secbutton"/>
         </form>
+      <MaskotBoll width="150px" height="150px" top="50px" left="350px" />
+      <Boll className="gulboll" height="100px" width="100px" left="5px" top="-7px"/>
       </div>
+
     );
   }
 }

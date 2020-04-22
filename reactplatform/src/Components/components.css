@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: 'Viga', sans-serif;
   width: 100vw;
+  height: 100vh;
 }
 
 .frostatGlas {
@@ -11,7 +12,7 @@ body {
   backdrop-filter: blur(50px);
   border: 1px solid #a3a3a3;
   box-shadow: inset 0px 15px 15px rgba (0, 0, 0, 0.25);
-  height: 90vh;
+  height: 80vh;
   width: 50vw;
 }
 
@@ -49,12 +50,13 @@ body {
   position: relative;
   background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  height: 25px;
+  height: 20px;
   width: 75px;
-  font-size: 8pt;
+  font-size: 6pt;
   margin-top: 10px;
   color: white;
   cursor: pointer;
+  padding-bottom: 15px;
 }
 
 .primärknapp:disabled {
@@ -71,12 +73,14 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: 1px solid #00a2ff;
   color: #3b5360;
-  height: 25px;
+  height: 20px;
   width: 75px;
-  font-size: 8pt;
+  font-size: 6pt;
   margin-top: 10px;
   cursor: pointer;
+  padding-bottom: 15px;
 }
+
 
 .sekundärknapp:focus:active {
   outline: none !important;
@@ -94,6 +98,8 @@ body {
 }
 
 .MaskotBoll {
+  position: absolute;
+  z-index: -1;
   height: 100px;
   width: 100px;
   border-radius: 50px;
@@ -114,6 +120,8 @@ body {
   height: 100px;
   width: 100px;
   border-radius: 50px;
+  position: absolute;
+  z-index: -1;
 }
 
 .grönboll {
@@ -123,6 +131,8 @@ body {
   height: 200px;
   width: 200px;
   border-radius: 100px;
+  position: absolute;
+  z-index: -1;
 }
 
 .blåboll {
@@ -132,6 +142,8 @@ body {
   height: 50px;
   width: 50px;
   border-radius: 25px;
+  position: absolute;
+  z-index: -1;
 }
 
 .blåPostit {
