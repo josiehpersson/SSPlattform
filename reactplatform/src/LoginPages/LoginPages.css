@@ -20,3 +20,11 @@
   align-items: center;
   z-index: 2;
 }
+.forgot-link {
+  font-size: 6pt;
+  position: absolute;
+  top: 270px;
+  left: 200px;
+  color: #3b5360;
+  cursor: pointer;
+}

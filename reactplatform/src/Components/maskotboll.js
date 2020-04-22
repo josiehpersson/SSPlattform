@@ -5,6 +5,7 @@ import './components.css';
 function MaskotBoll (props) {
     const styles = {
         position: 'absolute',
+        borderRadius: '50%',
         width: props.width,
         height: props.height,
         top: props.top,
