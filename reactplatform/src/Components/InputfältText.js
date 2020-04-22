@@ -11,6 +11,7 @@ function InputfältText (props) {
                     value={props.value}
                     onChange={props.onChange}
                     error={props.error}
+                    placeholder={props.placeholder}
                     className="inputfält" />
                     </div>
             )
