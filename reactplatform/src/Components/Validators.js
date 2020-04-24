@@ -99,7 +99,7 @@ export class SSPhoneValidator extends SSTextValidator {
 //STÖDFUNK. till MOBILNR.VALIDATOR
 //format : xxx-xxxxxxx
 function isValidPhone(text) {
-  return /^[0-9]{3}\-[0-9]{7}$/.test(text);
+   /^[0-9]{3}\-[0-9]{7}$/.test(text);
 }
 
 //PERSONNR.VALIDATOR
