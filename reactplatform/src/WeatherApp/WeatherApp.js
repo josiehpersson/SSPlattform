@@ -7,6 +7,7 @@ import Rain from './WeatherImages/rain.jpg';
 import Sun from './WeatherImages/sunny.jpg';
 import Tornado from './WeatherImages/tornado.jpg';
 import Snow from './WeatherImages/snow.jpg';
+import Clouds2 from './WeatherImages/clouds2.jpg';
 
 class WeatherApp extends React.Component {
   constructor(props) {
@@ -74,14 +75,30 @@ class WeatherApp extends React.Component {
 
     if (weather === 'Thunderstorm') {
       image = (
-        <img src={Thunderstorm} alt="weather-thunderstorm" className="weather-picture" />
+        <img
+          src="https://images.unsplash.com/photo-1475116127127-e3ce09ee84e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+          alt="weather-thunderstorm"
+          className="weather-picture"
+        />
       );
     }
     if (weather === 'Drizzle' || weather === 'Rain') {
-      image = <img src={Rain} alt="weather-rain" className="weather-picture" />;
+      image = (
+        <img
+          src="https://images.unsplash.com/photo-1486016006115-74a41448aea2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80"
+          alt="weather-rain"
+          className="weather-picture"
+        />
+      );
     }
     if (weather === 'Snow') {
-      image = <img src={Snow} alt="weather-snow" className="weather-picture" />;
+      image = (
+        <img
+          src="https://images.unsplash.com/photo-1547754980-3df97fed72a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+          alt="weather-snow"
+          className="weather-picture"
+        />
+      );
     }
     if (
       weather === 'Mist' ||
@@ -93,16 +110,41 @@ class WeatherApp extends React.Component {
       weather === 'Ash' ||
       weather === 'Squall'
     ) {
-      image = <img src={Mist} alt="weather-misty" className="weather-picture" />;
+      image = (
+        <img
+          src="https://images.unsplash.com/photo-1514418197935-e0cac2bb695a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+          alt="weather-misty"
+          className="weather-picture"
+        />
+      );
     }
     if (weather === 'Clear') {
-      image = <img src={Sun} alt="weather-sunny" className="weather-picture" />;
+      image = (
+        <img
+          src="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="weather-sunny"
+          className="weather-picture"
+        />
+      );
     }
+
     if (weather === 'Clouds') {
-        image = <img src={Clouds} alt="weather-cloudy" className="weather-picture" />;
-      }
+      image = (
+        <img
+          src="https://images.unsplash.com/photo-1569446419157-93922796cb47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1064&q=80"
+          alt="weather-cloudy"
+          className="weather-picture"
+        />
+      );
+    }
     if (weather === 'Tornado') {
-      image = <img src={Tornado} alt="weather-tornado" className="weather-picture" />;
+      image = (
+        <img
+          src="https://images.unsplash.com/photo-1527482937786-6608f6e14c15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+          alt="weather-tornado"
+          className="weather-picture"
+        />
+      );
     }
 
     this.setState({

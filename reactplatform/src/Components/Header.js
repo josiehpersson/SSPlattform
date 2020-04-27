@@ -8,29 +8,19 @@ function Header() {
       <img src={Logo} alt="Shaya Solutions Logotype" className="logotype" />
       <ul class="nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link menulink" href="#">
-            FÖRETAG
-          </a>
+          <a class="nav-link menulink">FÖRETAG</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link menulink" href="#">
-            KONSULT
-          </a>
+          <a class="nav-link menulink">KONSULT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link menulink" href="#">
-            FÖRFRÅGAN
-          </a>
+          <a class="nav-link menulink">FÖRFRÅGAN</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link menulink" href="#">
-            FAKTURA
-          </a>
+          <a class="nav-link menulink">FAKTURA</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link menulink" href="#">
-            TIDRAPPORT
-          </a>
+          <a class="nav-link menulink">TIDRAPPORT</a>
         </li>
         <li class="nav-item dropdown">
           <a
@@ -44,18 +34,18 @@ function Header() {
             <i class="fas fa-user-circle"></i>
           </a>
           <div class="dropdown-menu menu-dropdown">
-            <a class="dropdown-item menulink-dropdown" href="#">
-            <i class="fas fa-users-cog"></i>  ÅTKOMST
+            <a class="dropdown-item menulink-dropdown">
+              <i class="fas fa-users-cog"></i> ÅTKOMST
             </a>
-            <a class="dropdown-item menulink-dropdown" href="#">
-            <i class="fas fa-cog"></i>  INSTÄLLNINGAR
+            <a class="dropdown-item menulink-dropdown">
+              <i class="fas fa-cog"></i> INSTÄLLNINGAR
             </a>
-            <a class="dropdown-item menulink-dropdown" href="#">
-            <i class="far fa-chart-bar"></i> STATISTIK
+            <a class="dropdown-item menulink-dropdown">
+              <i class="far fa-chart-bar"></i> STATISTIK
             </a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item menulink-dropdown" href="#">
-            <i class="fas fa-sign-out-alt"></i>  LOGGA UT
+            <a class="dropdown-item menulink-dropdown">
+              <i class="fas fa-sign-out-alt"></i> LOGGA UT
             </a>
           </div>
         </li>

@@ -23,6 +23,7 @@ class Register extends React.Component {
             lastName : '',
             phone : '',
             password : '',
+            isLoggedIn: false,
         };
         this.firstNameValidator = new SSNameValidator();
         this.lastNameValidator = new SSNameValidator();

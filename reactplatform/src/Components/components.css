@@ -145,12 +145,15 @@ body {
 
 .blåPostit {
   background: linear-gradient(180deg, #ffffff 0%, #d3f5ff 100%);
+  color: #00a2ff;
 }
 .gulPostit {
   background: linear-gradient(180deg, #ffffff 0%, #ffe0c2 100%);
+  color: #ffb400;
 }
 .grönPostit {
   background: linear-gradient(180deg, #ffffff 0%, #d6fbc1 100%);
+  color: #6dcf37;
 }
 .grönPostit,
 .gulPostit,
@@ -158,19 +161,6 @@ body {
   width: 180px;
   height: 138px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.blåText {
-  color: #00a2ff;
-}
-.gulText {
-  color: #ffb400;
-}
-.grönText {
-  color: #6dcf37;
-}
-.grönText,
-.gulText,
-.blåText {
   font-family: Viga;
   font-style: normal;
   font-weight: normal;
@@ -178,6 +168,7 @@ body {
   line-height: 32px;
   text-align: center;
 }
+
 .blåBadge,
 .gulBadge,
 .grönBadge {
@@ -199,4 +190,10 @@ body {
 }
 .grönBadge {
   background-color: #6dcf37;
+}
+.greeting {
+  background:linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
+  color: white;
+  padding: 30px;
+  margin: 0;
 }

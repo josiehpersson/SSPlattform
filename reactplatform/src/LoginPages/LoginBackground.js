@@ -9,7 +9,8 @@ class LoginBackground extends React.Component {
         this.state={
             forgot: false,
             register: false,
-            login: true
+            login: true,
+            isLoggedIn: false,
         };
     }
 

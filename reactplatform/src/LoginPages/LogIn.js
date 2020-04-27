@@ -18,6 +18,7 @@ class LoginForm extends React.Component {
     this.state = {
       email: '',
       password: '',
+      isLoggedIn: false,
     };
     this.mailValidator = new SSMailValidator();
     this.passwordValidator = new SSPasswordValidator();

@@ -1,10 +1,11 @@
 import React from 'react';
-import Badge from './HEADER/Badge';
+import Badge from './Badge';
+import './components.css';
 function PostitRutor(props) {
   return (
     <div className={props.färg}>
-      <p className={props.färgText}>{props.text}</p>
-      <Badge badge={props.badge} Text={props.Text} />
+      <p>{props.text}</p>
+      <Badge badge={props.badge} number={props.number} />
     </div>
   );
 }

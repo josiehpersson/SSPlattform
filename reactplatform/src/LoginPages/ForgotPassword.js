@@ -13,6 +13,7 @@ class Forgotform extends React.Component {
     super(props);
     this.state = {
       mail: '',
+      isLoggedIn: false,
     };
     this.mailValidator = new SSMailValidator();
     this.formValidator = new SSCombinedValidator(this.mailValidator);
