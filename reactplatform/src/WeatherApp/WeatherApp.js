@@ -1,10 +1,21 @@
 import React from 'react';
+import './WeatherApp.css';
+import Thunderstorm from './WeatherImages/thunderstorm.jpg';
+import Clouds from './WeatherImages/clouds.jpg';
+import Mist from './WeatherImages/mist.jpg';
+import Rain from './WeatherImages/rain.jpg';
+import Sun from './WeatherImages/sunny.jpg';
+import Tornado from './WeatherImages/tornado.jpg';
+import Snow from './WeatherImages/snow.jpg';
+
 class WeatherApp extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       weatherData: {},
-      string: '',
+      stringCity: '',
+      stringTemp: '',
+      image: null,
     };
   }
   componentDidMount() {
@@ -41,27 +52,72 @@ class WeatherApp extends React.Component {
           description,
         };
         this.setState({
-          weatherData: data
-        })
+          weatherData: data,
+        });
       })
-      .then(() => this.displayWeather()) 
+      .then(() => this.displayWeather())
       .catch((error) => console.log(error));
   };
   displayWeather = () => {
     let city = this.state.weatherData.name;
     let temp = this.state.weatherData.temp;
     let feel = this.state.weatherData.feels_like;
-    let weather = this.state.weatherData.description;
-    let string = `${city} | ${temp} | ${feel} | ${weather}`;
+    let weather = this.state.weatherData.main;
+    let stringCity = `${city}`;
+    let stringTemp = `Temperatur: ${temp}°C | Känns som: ${feel}°C`;
     this.setState({
-      string: string,
+      stringCity: stringCity,
+      stringTemp: stringTemp,
+    });
+
+    let image;
+
+    if (weather === 'Thunderstorm') {
+      image = (
+        <img src={Thunderstorm} alt="weather-thunderstorm" className="weather-picture" />
+      );
+    }
+    if (weather === 'Drizzle' || weather === 'Rain') {
+      image = <img src={Rain} alt="weather-rain" className="weather-picture" />;
+    }
+    if (weather === 'Snow') {
+      image = <img src={Snow} alt="weather-snow" className="weather-picture" />;
+    }
+    if (
+      weather === 'Mist' ||
+      weather === 'Smoke' ||
+      weather === 'Haze' ||
+      weather === 'Dust' ||
+      weather === 'Fog' ||
+      weather === 'Sand' ||
+      weather === 'Ash' ||
+      weather === 'Squall'
+    ) {
+      image = <img src={Mist} alt="weather-misty" className="weather-picture" />;
+    }
+    if (weather === 'Clear') {
+      image = <img src={Sun} alt="weather-sunny" className="weather-picture" />;
+    }
+    if (weather === 'Clouds') {
+        image = <img src={Clouds} alt="weather-cloudy" className="weather-picture" />;
+      }
+    if (weather === 'Tornado') {
+      image = <img src={Tornado} alt="weather-tornado" className="weather-picture" />;
+    }
+
+    this.setState({
+      image: image,
     });
   };
   render() {
     return (
-      <main>
-        {this.state.string}
-      </main>
+      <div className="weather-container">
+        <div className="text-container">
+          <h3 className="weather-city-string">{this.state.stringCity}</h3>
+          <h6 className="weather-temp-string">{this.state.stringTemp}</h6>
+        </div>
+        <div className="weather-image">{this.state.image}</div>
+      </div>
     );
   }
 }
