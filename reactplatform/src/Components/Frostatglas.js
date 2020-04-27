@@ -1,8 +1,13 @@
 import React from 'react';
 import './components.css';
-
-function Frostatglas() {
-  return <div className="frostatGlas"></div>;
+​
+function Frostatglas(props) {
+  const styles={
+    width: props.width,
+    height: props.height,
+  }
+  return <div className="frostatGlas" style={styles}>
+    
+  </div>;
 }
-
-export default Frostatglas;
+​
