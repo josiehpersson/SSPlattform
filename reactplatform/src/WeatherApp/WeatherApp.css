@@ -1,0 +1,25 @@
+.weather-container {
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    height: 300px;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.weather-image {
+    z-index: 1;
+    position: absolute;
+    object-fit: cover;
+}
+
+.text-container {
+    position: absolute;
+    z-index: 2;
+    margin-top: 30%;
+    margin-left: 35%;
+    color: white;
+}
