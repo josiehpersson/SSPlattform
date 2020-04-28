@@ -72,28 +72,10 @@ class Forgotform extends React.Component {
           />
         </form>
 
-        <MaskotBoll width="200px" height="200px" left="-300px" top="-100px" />
-        <Boll
-          className="grönboll"
-          width="300px"
-          height="300px"
-          right="-100px"
-          top="25px"
-        />
-        <Boll
-          className="gulboll"
-          width="100px"
-          height="100px"
-          top="10px"
-          left="420px"
-        />
-        <Boll
-          className="blåboll"
-          width="150px"
-          height="150px"
-          bottom="-10px"
-          left="250px"
-        />
+        <MaskotBoll top="68%" right="1%" />
+        <Boll className="grönboll" top="8%" left="5%" />
+        <Boll className="gulboll" left="15%" bottom="-20%" />
+        <Boll className="blåboll" right="13%" top="-5%" />
       </div>
     );
   }

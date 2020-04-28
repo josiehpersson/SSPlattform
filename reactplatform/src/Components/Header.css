@@ -16,7 +16,7 @@
   left: 0;
   height: 40px;
   width: 35px;
-  filter: drop-shadow(0px 17.8857px 35.7714px #002f49);
+  filter: drop-shadow(1px 2px 3px  #002f49);
 }
 
 .menulink {
@@ -34,8 +34,6 @@
 
 .menu-dropdown {
   overflow: none;
-  position: absolute;
-  margin-right: 100px;
   background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
 }
 

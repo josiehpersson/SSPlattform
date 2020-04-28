@@ -1,4 +1,16 @@
 .start-page-container {
     margin: 0;
-    position: relative;
+    overflow-x: hidden;
+}
+
+.postit-container {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 70px;
+    margin-right: 70px;
+    position: absolute;
+    top: 55%;
+}
+.spacer {
+    padding: 20px;
 }

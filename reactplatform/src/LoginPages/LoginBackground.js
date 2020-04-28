@@ -1,7 +1,9 @@
 import React from 'react';
+import './LoginPages.css';
 import Register from './Register';
 import ForgotPassword from './ForgotPassword';
 import LogIn from './LogIn';
+import StartPage from '../StartPage/StartPage.js';
 
 class LoginBackground extends React.Component {
     constructor(props) {
@@ -10,6 +12,7 @@ class LoginBackground extends React.Component {
             forgot: false,
             register: false,
             login: true,
+            start: false,
             isLoggedIn: false,
         };
     }
@@ -20,6 +23,8 @@ class LoginBackground extends React.Component {
                 forgot: false,
                 login: false,
                 register: true,
+                start: false,
+                isLoggedIn: false,
             });
         }
         if(view === 'forgot') {
@@ -27,6 +32,8 @@ class LoginBackground extends React.Component {
                 forgot: true,
                 login: false,
                 register: false,
+                start: false,
+                isLoggedIn: false,
             });
         }
         if(view === 'login') {
@@ -34,7 +41,18 @@ class LoginBackground extends React.Component {
                 forgot: false,
                 login: true,
                 register: false,
+                start: false,
+                isLoggedIn: false,
             });
+        }
+        if(view === 'start') {
+            this.setState({
+                forgot: false,
+                login: false,
+                register: false,
+                start: true,
+                isLoggedIn: true,
+            })
         }
     }
 
@@ -46,11 +64,13 @@ class LoginBackground extends React.Component {
             view = <ForgotPassword changeView={this.changeView} />
         } else if (register) {
             view = <Register changeView={this.changeView} />
-        } else {
+        } else if (login) {
             view = <LogIn changeView={this.changeView} />
+        } else {
+            view = <StartPage changeView={this.changeView} />
         }
 
-        return <section className="Background-container">{view}</section>
+        return <section className="background-container">{view}</section>
     }
 }
 

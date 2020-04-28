@@ -8,17 +8,18 @@
   height: 300px;
   width: 100vw;
   overflow: hidden;
+  z-index: -1;
 }
 
 .weather-image {
-  z-index: 1;
+  Sz-index: 1;
   position: absolute;
   object-fit: contain;
 }
 
 .weather-picture {
-  z-index: 1;
   position: absolute;
+  z-index: 0;
   width: 100vw;
   height: 100vh;
 }

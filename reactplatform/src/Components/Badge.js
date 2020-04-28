@@ -1,8 +1,9 @@
 import React from 'react';
+import './components.css';
 function Badge(props) {
   return (
     <div className={props.badge}>
-      <p>{props.Text}</p>
+      <p className="badgenumber">{props.number}</p>
     </div>
   );
 }

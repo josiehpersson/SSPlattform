@@ -1,5 +1,6 @@
 import React from 'react';
 import './LoginPages.css';
+import Logotype from '../Components/LoggaSvart';
 import Inputfält from '../Components/InputfältText';
 import PrimaryButton from '../Components/PrimaryButton';
 import SecondaryButton from '../Components/SecondaryButton';
@@ -46,68 +47,77 @@ class LoginForm extends React.Component {
 
   onForgotClick = () => {
     console.log('glömt lösenord klickat');
-  }
+  };
 
   onRegisterClick = () => {
     console.log('registrera klickat!');
-  }
+  };
   handleSubmit = () => {
     const data = {
       mail: this.state.mail,
       password: this.state.password,
     };
+    this.props.changeView('start');
   };
   render() {
     return (
-      <div className="login-container">
-        <FrostatGlas id="login-glas"/>
+      <div className="window-container">
+        <div className="login-container">
+          <FrostatGlas id="login-glas" />
 
-        <form className="signin-form" onSubmit={this.handleSubmit}>
-          <h3 className="headline">Logga in</h3>
+          <form className="signin-form" onSubmit={this.handleSubmit}>
+            <Logotype />
 
-          <Inputfält
-            type="text"
-            labeltext="E-mail"
-            name="mail"
-            value={this.state.mail}
-            onChange={this.onMailChange}
-            error={this.mailValidator.invalid}
-            id="login-mailinput"
-          />
+            <h3 className="headline">Logga in</h3>
 
-          <Inputfält
-            type="password"
-            className="login-input"
-            labeltext="Password"
-            name="password"
-            value={this.state.password}
-            onChange={this.onPasswordChange}
-            error={this.passwordValidator.invalid}
-            id="login-passinput"
-          />
+            <Inputfält
+              type="text"
+              labeltext="E-mail"
+              name="mail"
+              value={this.state.mail}
+              onChange={this.onMailChange}
+              error={this.mailValidator.invalid}
+              id="login-mailinput"
+            />
 
-          <PrimaryButton
-            text="Logga in"
-            onClick={this.handleSubmit}
-            isDisabled={this.formValidator.invalid}
-            id="login-primbutton"
-          />
+            <Inputfält
+              type="password"
+              className="login-input"
+              labeltext="Password"
+              name="password"
+              value={this.state.password}
+              onChange={this.onPasswordChange}
+              error={this.passwordValidator.invalid}
+              id="login-passinput"
+            />
 
-          <SecondaryButton 
-          text="Registrera" 
-          onClick={() => this.props.changeView('register')}
-          isDisabled={false} 
-          id="login-secbutton"/>
-        </form>
-        <a className="forgot-link" onClick={() => this.props.changeView('forgot')}>Glömt lösenord?</a>
+            <PrimaryButton
+              text="Logga in"
+              onClick={this.handleSubmit}
+              isDisabled={this.formValidator.invalid}
+              id="login-primbutton"
+            />
 
-      <MaskotBoll width="150px" height="150px" top="50px" left="350px" />
-      <Boll className="gulboll" height="100px" width="100px" left="5px" top="-7px"/>
-      <Boll className="grönboll" height="200px" width="200px" bottom="-115px" left="100px"/>
-      <Boll className="blåboll" height="150px" width="150px" right="150px" top="5px"/>
-      <Boll className="grönboll" height="75px" width="75px" left="250px"/>
+            <SecondaryButton
+              text="Registrera"
+              onClick={() => this.props.changeView('register')}
+              isDisabled={false}
+              id="login-secbutton"
+            />
+          </form>
+          <a
+            className="forgot-link"
+            onClick={() => this.props.changeView('forgot')}
+          >
+            Glömt lösenord?
+          </a>
+
+          <MaskotBoll top="68%" right="1%" />
+          <Boll className="grönboll" top="8%" left="5%" />
+          <Boll className="gulboll" left="15%" bottom="-20%" />
+          <Boll className="blåboll" right="13%" top="-5%" />
+        </div>
       </div>
-
     );
   }
 }
