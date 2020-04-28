@@ -1,5 +1,6 @@
 import React from "react";
-import "./components.css";
+import './components.css';
+
 function Greeting(props) {
   const date = new Date();
   const hour = date.getHours();
@@ -11,7 +12,7 @@ function Greeting(props) {
   let night = `Ska du inte gå och lägga dig ${user}?`;
   let message = "";
   if (hour > 5 && hour <= 9) {
-    return (message = morning);
+   (message = morning);
   } else if (hour > 9 && hour <= 12) {
     message = day;
   } else if (hour > 12 && hour <= 17) {
@@ -21,7 +22,7 @@ function Greeting(props) {
   } else if (hour > 20 && hour <= 5) {
     message = night;
   }
-  console.log(message);
+
   return (
     <div>
       <h1 className="greeting">{`${message}`}</h1>

@@ -1,16 +1,21 @@
+.background-container {
+  margin: 0;
+  overflow-x: hidden;
+}
+
 .login-container, .forgot-container, .register-container {
   position: relative;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   margin: 0;
-  overflow-x: hidden;
+  overflow: hidden;
+  height: 100vh;
 }
 .headline {
   color: #3b5360;
   font-size: 14pt;
-  z-index: 2;
 }
 .signin-form, .forgot-form, .register-form {
   position: absolute;
@@ -18,13 +23,12 @@
   flex-flow: column nowrap;
   text-align: center;
   align-items: center;
-  z-index: 2;
 }
 .forgot-link {
   font-size: 6pt;
   position: absolute;
-  top: 270px;
-  left: 200px;
+  top: 300px;
+  left: 210px;
   color: #3b5360;
   cursor: pointer;
 }

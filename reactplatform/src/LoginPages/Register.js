@@ -102,6 +102,7 @@ class Register extends React.Component {
 
     render() {
         return(
+            <div className="window-container">
             <div className="register-container">
                 <FrostatGlas id="register-glas" />
 
@@ -178,6 +179,7 @@ class Register extends React.Component {
                 <Boll className="blåboll" height="150px" width="150px" right="10px" top="10px" />
                 <Boll className="grönboll" height="100px" width="100px" left="150px" top="20px"/>
 
+            </div>
             </div>
         )
     }
