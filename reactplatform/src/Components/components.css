@@ -12,7 +12,7 @@ body {
   backdrop-filter: blur(50px);
   border: 1px solid #a3a3a3;
   box-shadow: inset 0px 15px 15px rgba (0, 0, 0, 0.25);
-  height: 80vh;
+  height: 100vh;
   width: 50vw;
   box-sizing: border-box;
 }
@@ -48,7 +48,7 @@ body {
 }
 
 .inputhelp {
-  font-size: 4pt ;
+  font-size: 4pt;
 }
 
 .primärknapp {
