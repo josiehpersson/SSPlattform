@@ -67,7 +67,7 @@ class LoginForm extends React.Component {
 
           <form className="signin-form" onSubmit={this.handleSubmit}>
             <Logotype />
-            
+
             <h3 className="headline">Logga in</h3>
 
             <Inputfält
@@ -112,23 +112,11 @@ class LoginForm extends React.Component {
             Glömt lösenord?
           </a>
 
-          <MaskotBoll top="80%" right="-2%" />
-          <Boll
-            className="grönboll"
-            top="8%"
-            left="20%"
-          />
-          <Boll
-            className="gulboll"
-            left="15%"
-            bottom="-20%"
-          />
-          <Boll
-            className="blåboll"
-            right="13%"
-            top="-5%"
-          />
-                  </div>
+          <MaskotBoll top="68%" right="1%" />
+          <Boll className="grönboll" top="8%" left="5%" />
+          <Boll className="gulboll" left="15%" bottom="-20%" />
+          <Boll className="blåboll" right="13%" top="-5%" />
+        </div>
       </div>
     );
   }
