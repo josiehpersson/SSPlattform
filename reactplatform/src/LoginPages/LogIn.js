@@ -1,5 +1,6 @@
 import React from 'react';
 import './LoginPages.css';
+import Logotype from '../Components/LoggaSvart';
 import Inputfält from '../Components/InputfältText';
 import PrimaryButton from '../Components/PrimaryButton';
 import SecondaryButton from '../Components/SecondaryButton';
@@ -65,6 +66,8 @@ class LoginForm extends React.Component {
           <FrostatGlas id="login-glas" />
 
           <form className="signin-form" onSubmit={this.handleSubmit}>
+            <Logotype />
+            
             <h3 className="headline">Logga in</h3>
 
             <Inputfält
@@ -109,30 +112,23 @@ class LoginForm extends React.Component {
             Glömt lösenord?
           </a>
 
-          <MaskotBoll width="150px" height="150px" top="50px" left="350px" />
-          <Boll
-            className="gulboll"
-            height="100px"
-            width="100px"
-            left="5px"
-            top="-7px"
-          />
+          <MaskotBoll top="140%" right="-350%" />
           <Boll
             className="grönboll"
-            height="200px"
-            width="200px"
-            bottom="-115px"
-            left="100px"
+            top="8%"
+            left="20%"
+          />
+          <Boll
+            className="gulboll"
+            left="15%"
+            bottom="-20%"
           />
           <Boll
             className="blåboll"
-            height="150px"
-            width="150px"
-            right="150px"
-            top="5px"
+            right="13%"
+            top="-5%"
           />
-          <Boll className="grönboll" height="75px" width="75px" left="250px" />
-        </div>
+                  </div>
       </div>
     );
   }
