@@ -112,7 +112,7 @@ class LoginForm extends React.Component {
             Glömt lösenord?
           </a>
 
-          <MaskotBoll top="140%" right="-350%" />
+          <MaskotBoll top="80%" right="-2%" />
           <Boll
             className="grönboll"
             top="8%"
