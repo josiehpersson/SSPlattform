@@ -24,5 +24,7 @@
 
 @media only screen and (max-width: 1366px){
     .postit-container{
+        top:33%;       
+        margin-left:28%;
     }
 }
