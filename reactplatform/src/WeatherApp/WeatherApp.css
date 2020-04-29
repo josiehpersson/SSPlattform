@@ -47,3 +47,10 @@
     position:initial;
   }
 }
+
+@media only screen and (max-width: 1366px){
+  .text-container{
+    margin-top:17%;
+    margin-left:40%;
+  }
+}
