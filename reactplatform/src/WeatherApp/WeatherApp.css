@@ -54,3 +54,16 @@
     margin-left:40%;
   }
 }
+@media only screen and (max-width: 1680px){
+  .text-container{
+    margin-top:12%;
+    margin-left:35%;
+  }
+}
+
+@media only screen and (max-width: 1920px){
+  .text-container{
+    margin-top:12%;
+    margin-left:35%;
+  }
+}
