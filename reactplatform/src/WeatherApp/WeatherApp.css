@@ -31,3 +31,19 @@
   margin-left: 35%;
   color: white;
 }
+
+@media only screen and (max-width: 420px){
+  .text-container{
+  bottom:-155px;
+  margin-left:50px;
+  color:black;
+ 
+
+  }
+  .weather-image{
+    display: none;
+  }
+  .weather-container{
+    position:initial;
+  }
+}
