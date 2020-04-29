@@ -1,15 +1,43 @@
 .start-page-container {
+  margin: 0;
+  overflow-x: hidden;
 }
 
 .postit-container {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-left: 70px;
+  margin-right: 70px;
+  position: absolute;
+  top: 55%;
 }
 .spacer {
+  padding: 20px;
 }
 
 @media only screen and (max-width: 420px) {
+  .postit-container {
+    flex-direction: column;
+    top: 40%;
+  }
 }
 
+@media only screen and (max-width: 1366px) {
+  .postit-container {
+    top: 33%;
+    margin-left: 28%;
+  }
 }
 
+@media only screen and (max-width: 1680px) {
+  .postit-container {
+    top: 20%;
+  }
 }
 
+@media only screen and (max-width: 1920px) {
+  .postit-container {
+    top: 30%;
+    margin-left: 28%;
+  }
+}
