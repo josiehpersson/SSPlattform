@@ -11,6 +11,7 @@ import LoginBackground from './LoginPages/LoginBackground';
 //import StartPage from './StartPage/StartPage';
 //import StartPage from './StartPage/StartPage.js';
 //import InfoRad from './Components/InfoRad'
+//import ProfilBild from './Components/ProfilBild'
 function App() {
   return (
     <div className="App">

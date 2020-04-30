@@ -322,3 +322,10 @@ p.badgenumber {
 .bottom {
   background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
 }
+
+.ProfilBild{
+  width:100px;
+  height:100px;
+  background-color: grey;
+  border-radius:50px;
+}
