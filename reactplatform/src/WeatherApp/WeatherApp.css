@@ -31,3 +31,39 @@
   margin-left: 35%;
   color: white;
 }
+
+@media only screen and (max-width: 420px){
+  .text-container{
+  bottom:-155px;
+  margin-left:50px;
+  color:black;
+ 
+
+  }
+  .weather-image{
+    display: none;
+  }
+  .weather-container{
+    position:initial;
+  }
+}
+
+@media only screen and (max-width: 1366px){
+  .text-container{
+    margin-top:17%;
+    margin-left:40%;
+  }
+}
+@media only screen and (max-width: 1680px){
+  .text-container{
+    margin-top:12%;
+    margin-left:35%;
+  }
+}
+
+@media only screen and (max-width: 1920px){
+  .text-container{
+    margin-top:12%;
+    margin-left:35%;
+  }
+}

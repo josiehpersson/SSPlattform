@@ -231,6 +231,9 @@ p.badgenumber {
   .gulboll {
     display: none;
   }
+  body {
+    height: 120vh;
+  }
 }
 
 @media only screen and (max-width: 1366px) {
