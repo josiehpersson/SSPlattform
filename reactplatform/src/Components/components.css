@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Viga", sans-serif;
+  font-family: 'Viga', sans-serif;
   width: 100vw;
   height: 100vh;
 }
@@ -230,6 +230,9 @@ p.badgenumber {
   }
   .gulboll {
     display: none;
+  }
+  body {
+    height: 120vh;
   }
 }
 
