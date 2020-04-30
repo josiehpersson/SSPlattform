@@ -10,6 +10,7 @@ import LoginBackground from './LoginPages/LoginBackground';
 //import WeatherApp from './WeatherApp/WeatherApp';
 //import StartPage from './StartPage/StartPage';
 //import StartPage from './StartPage/StartPage.js';
+//import InfoRad from './Components/InfoRad'
 function App() {
   return (
     <div className="App">

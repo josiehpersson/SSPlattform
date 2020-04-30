@@ -295,3 +295,30 @@ p.badgenumber {
     height: 500px;
   }
 }
+
+.top,
+.bottom {
+  width: 50%;
+  height: 35px;
+}
+
+.top {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: start;
+}
+
+.top h6,
+.bottom h6 {
+  margin: 10px;
+}
+
+.uppgifter {
+  color: white;
+}
+
+.bottom {
+  background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
+}
