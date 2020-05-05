@@ -1,5 +1,5 @@
 import React from 'react';
-import '../components.css';
+import './Lådor.css';
 function StatusPlupp(props) {
   return <div className={props.färg}></div>;
 }
