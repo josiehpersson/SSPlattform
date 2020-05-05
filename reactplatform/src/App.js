@@ -13,6 +13,8 @@ import './Components/components.css';
 //import InfoRad from './Components/InfoRad'
 //import ProfilBild from './Components/ProfilBild'
 import PopupProfile from './Components/KonsultLådor/PopupProfile';
+import Textfält from './Components/KonsultLådor/Textfält';
+
 function App() {
   return (
     <div className="App">
