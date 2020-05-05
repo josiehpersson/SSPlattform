@@ -1,14 +1,13 @@
 import React from 'react';
 import './Lådor.css';
 import ProfilePic from './profile.jpg';
-import Textfält from './Textfält';
 import StatusPlupp from './StatusPlupp';
-function PopupProfile(props) {
+function PopupCV(props) {
   return (
     <div className="popup-profile-container">
       <div class="profile-button">
         <a href="#myModal" class="trigger-btn" data-toggle="modal">
-          <i class="fas fa-id-badge"></i> Profil
+          <i class="fas fa-file"></i> CV
         </a>
       </div>
       <div id="myModal" class="modal fade">
@@ -34,11 +33,7 @@ function PopupProfile(props) {
               </button>
             </div>
             <div class="modal-body popup-profile-body">
-              <Textfält titel="Namn" />
-              <Textfält titel="#" />
-              <Textfält titel="Titel" />
-              <Textfält titel="Telefon" />
-              <Textfält titel="E-mail" />
+              <h1>KONSULTENS CV</h1>
             </div>
           </div>
         </div>
@@ -47,4 +42,4 @@ function PopupProfile(props) {
   );
 }
 
-export default PopupProfile;
+export default PopupCV;
