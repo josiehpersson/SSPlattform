@@ -224,6 +224,21 @@ p.badgenumber {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
+.röd-plupp,
+.grön-plupp {
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+}
+
+.röd-plupp {
+  background-color: red;
+}
+
+.grön-plupp {
+  background-color: green;
+}
+
 @media only screen and (max-width: 420px) {
   .frostatGlas {
     width: 70vw;
@@ -328,4 +343,5 @@ p.badgenumber {
   height:100px;
   background-color: grey;
   border-radius:50px;
+
 }
