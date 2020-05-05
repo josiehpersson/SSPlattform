@@ -41,4 +41,4 @@ function Företagslåda(props) {
   );
 }
 
-export default Företagslåda 
+export default Företagslåda export default Företagslåda;
