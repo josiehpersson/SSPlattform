@@ -7,5 +7,4 @@ function ProfilBild(props) {
     </div>
   );
 }
-
 export default ProfilBild;
