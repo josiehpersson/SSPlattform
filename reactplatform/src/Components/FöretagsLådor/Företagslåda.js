@@ -7,7 +7,6 @@ function Företagslåda(props){
         <div>
              
             <div className="boxNav">
-                <ProfilBild src={props.img} alt={props.alt}/> 
             </div>
             <div className="boxBody">
                 <div className="FöretagsInfo">
