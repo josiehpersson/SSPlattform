@@ -356,5 +356,8 @@ p.badgenumber {
   position: relative;
   top: 120px;
   text-align: center;
-  width: 100%;
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  border-radius: 50px;
 }
