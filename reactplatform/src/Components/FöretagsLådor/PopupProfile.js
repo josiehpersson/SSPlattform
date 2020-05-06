@@ -1,7 +1,7 @@
 import React from 'react';
-import './Lådor.css';
-import ProfilePic from './profile.jpg';
-import Textfält from './Textfält';
+import '../KonsultLådor/Lådor.css';
+import ProfilePic from '../KonsultLådor/profile.jpg';
+import Textfält from '../KonsultLådor/Textfält';
 
 function PopupProfile(props) {
   return (
@@ -16,7 +16,7 @@ function PopupProfile(props) {
           <div class="modal-content">
             <div class="modal-header">
               <div class="icon-box">
-                <img
+              <img
                   src={ProfilePic}
                   alt="User profile picture"
                   className="popup-profile-picture"
