@@ -3,6 +3,8 @@ import './Lådor.css';
 import ProfilePic from './profile.jpg';
 import Textfält from './Textfält';
 import StatusPlupp from './StatusPlupp';
+
+
 function PopupProfile(props) {
   return (
     <div className="popup-profile-container">
