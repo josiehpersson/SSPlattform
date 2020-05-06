@@ -63,7 +63,7 @@ body {
   cursor: pointer;
   padding-bottom: 15px;
   border-radius: 0;
-  z-index:1;
+  z-index: 1;
 }
 
 .primärknapp:disabled {
@@ -324,48 +324,37 @@ p.badgenumber {
   background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
 }
 
-.ProfilBild{
-  width:70px;
-  height:70px;
+.ProfilBild {
+  width: 70px;
+  height: 70px;
   background-color: grey;
-  border-radius:50px;
+  border-radius: 50px;
   position: absolute;
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.boxNav{
+.boxNav {
   width: 250px;
   height: 75px;
-  background: linear-gradient(270deg, #6DCF37 0%, #00A2FF 100%);
-  position:absolute;
+  background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
+  position: absolute;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  z-index:1;
+  z-index: 1;
 }
 
-.boxBody{
-width: 250px;
-height: 270px;
-background: #F3F3F3;
-opacity: 0.9;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.boxBody {
+  width: 250px;
+  height: 270px;
+  background: #f3f3f3;
+  opacity: 0.9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
-.FöretagsInfo{
-  position:relative;
-  top:120px;
-  text-align:center;
-  width:100%;
-}
-
-
-.alla{
-  display:flex;
-  flex-direction: row;
-  margin:20px;
+.FöretagsInfo {
+  position: relative;
+  top: 120px;
+  text-align: center;
   width: 100%;
-  display: flex;
-  align-items: flex-start;
 }
