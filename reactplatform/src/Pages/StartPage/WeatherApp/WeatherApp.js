@@ -1,13 +1,5 @@
 import React from 'react';
 import './WeatherApp.css';
-import Thunderstorm from './WeatherImages/thunderstorm.jpg';
-import Clouds from './WeatherImages/clouds.jpg';
-import Mist from './WeatherImages/mist.jpg';
-import Rain from './WeatherImages/rain.jpg';
-import Sun from './WeatherImages/sunny.jpg';
-import Tornado from './WeatherImages/tornado.jpg';
-import Snow from './WeatherImages/snow.jpg';
-import Clouds2 from './WeatherImages/clouds2.jpg';
 
 class WeatherApp extends React.Component {
   constructor(props) {

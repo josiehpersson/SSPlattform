@@ -1,17 +1,17 @@
 import React from 'react';
 import './LoginPages.css';
-import Logotype from '../Components/LoggaSvart';
-import Inputfält from '../Components/InputfältText';
-import PrimaryButton from '../Components/PrimaryButton';
-import SecondaryButton from '../Components/SecondaryButton';
-import FrostatGlas from '../Components/Frostatglas';
-import Boll from '../Components/Boll';
-import MaskotBoll from '../Components/maskotboll';
+import Logotype from '../../Komponenter/UI-komponenter/LoggaSvart';
+import Inputfält from '../../Komponenter/UI-komponenter/InputfältText';
+import PrimaryButton from '../../Komponenter/UI-komponenter/PrimaryButton';
+import SecondaryButton from '../../Komponenter/UI-komponenter/SecondaryButton';
+import FrostatGlas from '../../Komponenter/UI-komponenter/Frostatglas';
+import Boll from '../../Komponenter/Bollar/Boll';
+import MaskotBoll from '../../Komponenter/Bollar/maskotboll';
 import {
   SSMailValidator,
   SSPasswordValidator,
   SSCombinedValidator,
-} from '../Components/Validators';
+} from '../../Komponenter/UI-komponenter/Validators';
 
 class LoginForm extends React.Component {
   constructor(props) {
