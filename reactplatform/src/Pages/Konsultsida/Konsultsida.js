@@ -5,6 +5,7 @@ import FrostatGlas from '../../Komponenter/UI-komponenter/Frostatglas';
 import Boll from '../../Komponenter/Bollar/Boll';
 import SearchBar from '../../Komponenter/UI-komponenter/SearchBar';
 import SecondaryButton from '../../Komponenter/UI-komponenter/SecondaryButton';
+
 import './Konsultsida.css';
 
 function KonsultSida (props) {
