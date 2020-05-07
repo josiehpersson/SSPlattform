@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
-import LoginBackground from './Pages/LoginPages/LoginBackground';
+//import LoginBackground from './Pages/LoginPages/LoginBackground';
+import Konsultsida from './Pages/Konsultsida/Konsultsida';
 function App() {
   return (
     <div className="App">
-      <LoginBackground />
+      <Konsultsida />
     </div>
   );
 }

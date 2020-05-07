@@ -31,13 +31,25 @@ function KonsultSida (props) {
             </div>
 
             <div className="konsultsida-container">
-                <FrostatGlas height="500px" width="800px">
+                <FrostatGlas height="700px" width="800px">
                 </FrostatGlas>
-                    <div className="button-holder">
-                        <SecondaryButton />
+                    <div className="konsult-button-holder">
+                        <SecondaryButton 
+                        text="Filter" />
                         <SearchBar />
                     </div>
             </div>
+                    <div className="konsultlåda-container">
+                        <Konsultlåda />
+                        <Konsultlåda />
+                        <Konsultlåda />
+                        <Konsultlåda />
+                        <Konsultlåda />
+                        <Konsultlåda />
+                        <Konsultlåda />
+                        <Konsultlåda />
+                    </div>
+                    
 
         </div>
     )
