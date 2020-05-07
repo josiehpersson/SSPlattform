@@ -1,6 +1,5 @@
 import React from 'react';
 import './StartPage.css';
-import '../UI-komponenter/components.css';
 
 import Header from '../../Komponenter/Navbar/Header';
 import WeatherApp from './WeatherApp/WeatherApp.js';

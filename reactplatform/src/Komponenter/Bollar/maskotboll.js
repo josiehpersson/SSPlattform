@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from './maskotbild.png';
-import './components.css';
+import './Boll.css';
 
 function MaskotBoll (props) {
     const styles = {

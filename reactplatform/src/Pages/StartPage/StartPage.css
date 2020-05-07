@@ -73,12 +73,14 @@ p.badgenumber {
 }
 
 .postit-container {
+  width: 90vw;
   display: flex;
   flex-flow: row nowrap;
-  margin-left: 70px;
-  margin-right: 70px;
+  align-content: space-between;
+  align-items: space-between;
+  justify-content: space-between;
   position: absolute;
-  top: 55%;
+  left: -220px;
 }
 .spacer {
   padding: 20px;
@@ -106,7 +108,7 @@ p.badgenumber {
 
 @media only screen and (max-width: 1920px) {
   .postit-container {
-    top: 30%;
+    top: 40%;
     margin-left: 28%;
   }
 }
