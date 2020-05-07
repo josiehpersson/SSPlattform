@@ -1,32 +1,47 @@
 import React from 'react';
 import './POPUPCSS.css';
-import PrimaryButton from '../PrimaryButton.js';
+import ProfilePic from './profile.jpg';
 
-function PopupCV (props) {
-return (
-  <div>
-<div className="text-center">
-	<a href="#myModal" class="trigger-btn" className={props.className} data-toggle="modal"><i class="fas fa-file-alt"></i> CV</a>
-</div>
-
-<div id="myModal" className="modal fade">
-	<div className="modal-dialog modal-confirm">
-		<div className="modal-content">
-			<div className="modal-header">
-				<div className="icon-box">
-					<i className="material-icons">&#xE876;</i>
-				</div>
-				<button type="button" className="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			</div>
-			<div className="modal-body text-center">
-				<h4>Great!</h4>	
-				<p>Your account has been created successfully.</p>
-				<button className="btn btn-success" data-dismiss="modal"><span>Start Exploring</span> <i className="material-icons">&#xE5C8;</i></button>
-			</div>
-		</div>
-	</div>
-</div>     
-  </div>
-)
+function PopupCV(props) {
+  return (
+    <div>
+      <div className={props.className}>
+        <a href="#myCV" class="trigger-btn" data-toggle="modal">
+          <i class="fas fa-file-alt"></i> CV
+        </a>
+      </div>
+      <div id="myCV" class="modal fade">
+        <div class="modal-dialog modal-confirm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div className="user-info">
+                <img
+                  src={ProfilePic}
+                  alt="user profile picture"
+                  className="user-pic"
+                ></img>
+                <div className="user-name">
+                  <h1>Josephine</h1>
+                  <h3>Halkola Persson</h3>
+                  <h6>#43567</h6>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+            </div>
+            <div class="modal-body text-center">
+              <h4>KONSULTENS CV</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
-export default PopupCV
+export default PopupCV;

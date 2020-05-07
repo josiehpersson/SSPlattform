@@ -14,12 +14,13 @@ import './Components/KonsultLådor/Lådor.css';
 //import InfoRad from './Components/InfoRad'
 //import ProfilBild from './Components/ProfilBild'
 //import KonsultLåda from './Components/KonsultLådor/Konsultlåda';
-//import PopupProfile from './Components/KonsultLådor/PopupProfile';
+import PopupProfile from './Components/KonsultLådor/PopupProfile';
 import PopupCV from './Components/KonsultLådor/PopupCV';
 function App() {
   return (
     <div className="App">
-      <PopupCV/>
+      <PopupCV className="låda-primärknapp" />
+      <PopupProfile className="låda-grå" />
     </div>
   );
 }
