@@ -364,3 +364,20 @@ p.badgenumber {
   position: absolute;
   left: 35%;
 }
+
+.form-control-sm,
+.fa-search:before {
+  border-radius: 0;
+  box-shadow: inset 0px 17.8857px 17.8857px rgba(0, 0, 0, 0.25);
+  border: 1px solid #00a2ff;
+}
+
+.form-control-sm {
+  border-left: none;
+}
+
+.fa-search:before {
+  color: #00a2ff;
+  padding: 6.5px;
+  border-right: none;
+}
