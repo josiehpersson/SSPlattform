@@ -3,28 +3,34 @@ import '../KonsultLådor/Lådor.css';
 import ProfilePic from '../KonsultLådor/profile.jpg';
 import Textfält from '../KonsultLådor/Textfält';
 
-function PopupProfile(props) {
-  return (
-    <div className="popup-profile-container">
-      <div class="primärknapp" id="infoBtn">
+import React from 'react';
+import './POPUPCSS.css';
+import ProfilePic from './profile.jpg';
+import Textfält from './Textfält';
 
-      <div class="primärknapp" id="infoBtn">
-      <div class="PrimaryButton">
-        <a href="#myModal" class="trigger-btn" data-toggle="modal">
-          <i class="fas fa-id-badge"></i> Info
+function PopupCompanyProfile(props) {
+  return (
+    <div>
+      <div className={props.className}>
+        <a href="#myCompanyProfile" class="trigger-btn" data-toggle="modal">
+          <i class="fas fa-user-circle"></i> Profil
         </a>
       </div>
-      <div id="myModal" class="modal fade">
+      <div id="myCompanyProfile" class="modal fade">
         <div class="modal-dialog modal-confirm">
           <div class="modal-content">
             <div class="modal-header">
-              <div class="icon-box">
+              <div className="user-info">
                 <img
                   src={ProfilePic}
-                  alt="User profile picture"
-                  className="popup-profile-picture"
-                />
-                <h3 className="popup-username">Josephine</h3>
+                  alt="user profile picture"
+                  className="user-pic"
+                ></img>
+                <div className="user-name">
+                  <h1>Josephine</h1>
+                  <h3>Halkola Persson</h3>
+                  <h6>#43567</h6>
+                </div>
               </div>
               <button
                 type="button"
@@ -35,10 +41,9 @@ function PopupProfile(props) {
                 &times;
               </button>
             </div>
-            <div class="modal-body popup-profile-body">
-              <Textfält titel="Administratör" />
-              <Textfält titel="Organisationsnr." />
+            <div class="modal-body" className="profile-info">
               <Textfält titel="Adress" />
+              <Textfält titel="Organisationsnr." />
               <Textfält titel="Bransch" />
               <Textfält titel="Telefon" />
               <Textfält titel="E-mail" />
@@ -49,5 +54,4 @@ function PopupProfile(props) {
     </div>
   );
 }
-
-export default PopupProfile;
+export default PopupCompanyProfile;
