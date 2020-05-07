@@ -1,27 +1,30 @@
 import React from 'react';
-import './Lådor.css';
+import './POPUPCSS.css';
 import ProfilePic from './profile.jpg';
-import StatusPlupp from './StatusPlupp';
+
 function PopupCV(props) {
   return (
-    <div className="popup-profile-container">
-      <div class="profile-button">
-        <a href="#myModal" class="trigger-btn" data-toggle="modal">
-          <i class="fas fa-file"></i> CV
+    <div>
+      <div className={props.className}>
+        <a href="#myCV" class="trigger-btn" data-toggle="modal">
+          <i class="fas fa-file-alt"></i> CV
         </a>
       </div>
-      <div id="myModal" class="modal fade">
+      <div id="myCV" class="modal fade">
         <div class="modal-dialog modal-confirm">
           <div class="modal-content">
             <div class="modal-header">
-              <StatusPlupp färg="röd-plupp" />
-              <div class="icon-box">
+              <div className="user-info">
                 <img
                   src={ProfilePic}
-                  alt="User profile picture"
-                  className="popup-profile-picture"
-                />
-                <h3 className="popup-username">Josephine</h3>
+                  alt="user profile picture"
+                  className="user-pic"
+                ></img>
+                <div className="user-name">
+                  <h1>Josephine</h1>
+                  <h3>Halkola Persson</h3>
+                  <h6>#43567</h6>
+                </div>
               </div>
               <button
                 type="button"
@@ -32,8 +35,8 @@ function PopupCV(props) {
                 &times;
               </button>
             </div>
-            <div class="modal-body popup-profile-body">
-              <h1>KONSULTENS CV</h1>
+            <div class="modal-body text-center">
+              <h4>KONSULTENS CV</h4>
             </div>
           </div>
         </div>
@@ -41,5 +44,4 @@ function PopupCV(props) {
     </div>
   );
 }
-
 export default PopupCV;

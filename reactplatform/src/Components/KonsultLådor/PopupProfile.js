@@ -1,28 +1,31 @@
 import React from 'react';
-import './Lådor.css';
+import './POPUPCSS.css';
 import ProfilePic from './profile.jpg';
 import Textfält from './Textfält';
-import StatusPlupp from './StatusPlupp';
+
 function PopupProfile(props) {
   return (
-    <div className="popup-profile-container">
-      <div class="profile-button">
-        <a href="#myModal" class="trigger-btn" data-toggle="modal">
-          <i class="fas fa-id-badge"></i> Profil
+    <div>
+      <div className={props.className}>
+        <a href="#myProfile" class="trigger-btn" data-toggle="modal">
+          <i class="fas fa-user-circle"></i> Profil
         </a>
       </div>
-      <div id="myModal" class="modal fade">
+      <div id="myProfile" class="modal fade">
         <div class="modal-dialog modal-confirm">
           <div class="modal-content">
             <div class="modal-header">
-              <StatusPlupp färg="röd-plupp" />
-              <div class="icon-box">
+              <div className="user-info">
                 <img
                   src={ProfilePic}
-                  alt="User profile picture"
-                  className="popup-profile-picture"
-                />
-                <h3 className="popup-username">Josephine</h3>
+                  alt="user profile picture"
+                  className="user-pic"
+                ></img>
+                <div className="user-name">
+                  <h1>Josephine</h1>
+                  <h3>Halkola Persson</h3>
+                  <h6>#43567</h6>
+                </div>
               </div>
               <button
                 type="button"
@@ -33,7 +36,7 @@ function PopupProfile(props) {
                 &times;
               </button>
             </div>
-            <div class="modal-body popup-profile-body">
+            <div class="modal-body" className="profile-info">
               <Textfält titel="Namn" />
               <Textfält titel="#" />
               <Textfält titel="Titel" />
@@ -46,5 +49,4 @@ function PopupProfile(props) {
     </div>
   );
 }
-
 export default PopupProfile;
