@@ -6,7 +6,7 @@ import Textfält from '../KonsultLådor/Textfält';
 function PopupProfile(props) {
   return (
     <div className="popup-profile-container">
-      <div class="PrimaryButton">
+      <div class="primärknapp" id="infoBtn">
         <a href="#myModal" class="trigger-btn" data-toggle="modal">
           <i class="fas fa-id-badge"></i> Info
         </a>
