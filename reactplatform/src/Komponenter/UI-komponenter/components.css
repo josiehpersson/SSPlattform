@@ -191,14 +191,16 @@ body {
 
 .form-control-sm {
   border-left: none;
+  border-radius: 0;
 }
 
 .fa-search:before {
   color: #00a2ff;
   padding: 6.5px;
   border-right: none;
+  margin-right: -5;
   width: 100px;
   height: 100px;
-  background-color: grey;
-  border-radius: 50px;
+  background-color:none;
+
 }

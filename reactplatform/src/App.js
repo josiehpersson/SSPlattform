@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 //import Header from './Components/Header';
-import './Components/components.css';
+//import './Components/components.css';
 //import Greeting from './Components/Greeting';
 //import LoginPage from './LoginPages/LogIn';
 //import ForgotPassword from './LoginPages/ForgotPassword';
@@ -12,7 +12,7 @@ import './Components/components.css';
 //import StartPage from './StartPage/StartPage.js';
 //import InfoRad from './Components/InfoRad'
 //import ProfilBild from './Components/ProfilBild'
-import KonsultSida from './Konsultsida/Konsultsida';
+import KonsultSida from './Pages/Konsultsida/Konsultsida';
 function App() {
   return (
     <div className="App">
