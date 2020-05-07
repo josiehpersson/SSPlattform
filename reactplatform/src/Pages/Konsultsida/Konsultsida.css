@@ -1,7 +1,8 @@
 .header-content {
     background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
-    width: 100%;
+    width: 100vw;
     height: 100px;
+    overflow-x: hidden;
 }
 .page-header {
     z-index: 2;

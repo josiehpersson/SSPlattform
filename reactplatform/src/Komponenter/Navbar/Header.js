@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from './logga.png';
+import Logo from '../UI-komponenter/logga.png';
 import './Header.css';
 
 function Header() {

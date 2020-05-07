@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../Components/Header';
-import Konsultlåda from '../Components/KonsultLådor/Konsultlåda';
-import FrostatGlas from '../Components/Frostatglas';
-import Boll from '../Components/Boll';
-import SearchBar from '../Components/SearchBar';
-import SecondaryButton from '../Components/SecondaryButton';
+import Header from '../../Komponenter/Navbar/Header';
+import Konsultlåda from '../../Komponenter/KonsultLådor/Konsultlåda';
+import FrostatGlas from '../../Komponenter/UI-komponenter/Frostatglas';
+import Boll from '../../Komponenter/Bollar/Boll';
+import SearchBar from '../../Komponenter/UI-komponenter/SearchBar';
+import SecondaryButton from '../../Komponenter/UI-komponenter/SecondaryButton';
 import './Konsultsida.css';
 
 function KonsultSida (props) {
