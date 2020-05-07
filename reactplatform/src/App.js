@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 //import Header from './Components/Header';
 import './Components/components.css';
+import './Components/KonsultLådor/Lådor.css';
 //import Greeting from './Components/Greeting';
 //import LoginPage from './LoginPages/LogIn';
 //import ForgotPassword from './LoginPages/ForgotPassword';
@@ -12,11 +13,13 @@ import './Components/components.css';
 //import StartPage from './StartPage/StartPage.js';
 //import InfoRad from './Components/InfoRad'
 //import ProfilBild from './Components/ProfilBild'
-import KonsultLåda from './Components/KonsultLådor/Konsultlåda';
+//import KonsultLåda from './Components/KonsultLådor/Konsultlåda';
+//import PopupProfile from './Components/KonsultLådor/PopupProfile';
+import PopupCV from './Components/KonsultLådor/PopupCV';
 function App() {
   return (
     <div className="App">
-      <KonsultLåda />
+      <PopupCV/>
     </div>
   );
 }

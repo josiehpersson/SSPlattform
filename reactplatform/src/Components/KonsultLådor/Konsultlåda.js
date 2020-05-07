@@ -1,29 +1,28 @@
 import React from 'react';
+import './Lådor.css';
 import ProfilBild from '../FöretagsLådor/ProfilBild';
-import PopupCV from './PopupCV';
-import StatusPlupp from './StatusPlupp';
+import PopupCV from './PopupCV.js';
 import PopupProfile from './PopupProfile';
 
-function Konsultlåda(props) {
+function Företagslåda(props) {
   return (
-    <div className="KonsultLådor">
+    <div className="FöretagsLådor">
       <div className="konsult-header">
-        <StatusPlupp />
         <ProfilBild />
       </div>
       <div className="konsult-body">
+        <div className="konsult-info">
           <div className="btn-holder">
           <PopupProfile />
           <PopupCV />
-            
+
           </div>
-        <div className="konsult-info">
-          <h4>{props.namn}</h4>
-          <h6>{props.id}</h6>
+          <h4>Josephine</h4>
+          <h6>#354637</h6>
         </div>
       </div>
     </div>
   );
 }
 
-export default Konsultlåda;
+export default Företagslåda;

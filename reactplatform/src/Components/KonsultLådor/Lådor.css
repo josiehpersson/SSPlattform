@@ -7,96 +7,8 @@
   padding-top: 5px;
   text-align: center;
   color: #3b5360;
-}
-
-.modal-confirm {
-  color: #434e65;
-  width: 525px;
-}
-.modal-confirm .modal-content {
-  padding: 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: none;
-}
-.modal-confirm .modal-header {
-  background: #00a2ff;
-  border-bottom: none;
-  position: relative;
-  text-align: center;
-  margin: -20px -20px 0;
-  border-radius: 5px 5px 0 0;
-  padding: 35px;
-}
-.modal-confirm h4 {
-  text-align: center;
-  font-size: 36px;
-  margin: 10px 0;
-}
-.modal-confirm .form-control,
-.modal-confirm .btn {
-  min-height: 40px;
-  border-radius: 3px;
-}
-.modal-confirm .close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  color: #fff;
-  text-shadow: none;
-  opacity: 0.5;
-}
-.modal-confirm .close:hover {
-  opacity: 0.8;
-}
-.modal-confirm .icon-box {
-  color: #fff;
-  width: 95px;
-  height: 95px;
-  display: inline-block;
-  border-radius: 50%;
   z-index: 9;
-  padding: 15px;
-  text-align: center;
 }
-.modal-confirm .icon-box i {
-  font-size: 64px;
-  margin: -4px 0 0 -4px;
-}
-
-.modal-confirm.modal-dialog {
-  margin-top: 80px;
-}
-.modal-confirm .btn {
-  color: #fff;
-  border-radius: 4px;
-  background: #eeb711;
-  text-decoration: none;
-  transition: all 0.4s;
-  line-height: normal;
-  border-radius: 30px;
-  margin-top: 10px;
-  padding: 6px 20px;
-  border: none;
-}
-.modal-confirm .btn:hover,
-.modal-confirm .btn:focus {
-  background: #eda645;
-  outline: none;
-}
-.modal-confirm .btn span {
-  margin: 1px 3px 0;
-  float: left;
-}
-.modal-confirm .btn i {
-  margin-left: 1px;
-  font-size: 20px;
-  float: right;
-}
-.trigger-btn {
-  display: inline-block;
-}
-
 .popup-profile-picture {
   height: inherit;
   width: inherit;
@@ -123,7 +35,6 @@
   width: 10px;
   border-radius: 5px;
   position: absolute;
-  z-index: 50;
   left: 45px;
   top: 40px;
 }
@@ -179,10 +90,12 @@
   background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
   position: absolute;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  z-index: 1;
 }
 
 .konsult-body {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   width: 250px;
   height: 270px;
   background: #f3f3f3;
@@ -192,8 +105,10 @@
 .btn-holder {
   display: flex;
   flex-flow: row nowrap;
+  width: inherit;
+  justify-content: space-evenly;
 }
-.konsult-info{
+.konsult-info {
   position: relative;
   top: 120px;
   text-align: center;
