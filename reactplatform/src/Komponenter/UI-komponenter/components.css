@@ -184,6 +184,7 @@ body {
 
 .form-control-sm,
 .fa-search:before {
+  border-radius: 0;
   box-shadow: inset 0px 17.8857px 17.8857px rgba(0, 0, 0, 0.25);
   border: 1px solid #00a2ff;
 }
@@ -201,4 +202,5 @@ body {
   width: 100px;
   height: 100px;
   background-color:none;
+
 }

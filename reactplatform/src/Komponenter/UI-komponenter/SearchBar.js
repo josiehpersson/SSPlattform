@@ -1,6 +1,7 @@
 import React from 'react';
 import './components.css';
 
+
 function SearchBar() {
   return (
     <div>
