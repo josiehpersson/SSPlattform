@@ -59,6 +59,8 @@
   display: flex;
   flex-flow: column nowrap;
   width: 20%;
+  box-sizing: border-box;
+  margin: 5px;
 
 }
 .konsult-header {
