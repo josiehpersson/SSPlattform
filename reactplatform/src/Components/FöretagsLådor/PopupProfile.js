@@ -16,7 +16,7 @@ function PopupProfile(props) {
           <div class="modal-content">
             <div class="modal-header">
               <div class="icon-box">
-              <img
+                <img
                   src={ProfilePic}
                   alt="User profile picture"
                   className="popup-profile-picture"
