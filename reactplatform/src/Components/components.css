@@ -363,4 +363,8 @@ p.badgenumber {
   padding: 6px;
   position: absolute;
   left: 35%;
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  border-radius: 50px;
 }

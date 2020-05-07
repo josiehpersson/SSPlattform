@@ -1,5 +1,6 @@
 import React from 'react';
 import ProfilBild from './ProfilBild';
+import PrimaryButton from '../PrimaryButton';
 import PopupProfile from './PopupProfile';
 
 function Företagslåda(props) {
@@ -14,6 +15,8 @@ function Företagslåda(props) {
           <h6>{props.stadNamn}</h6>
           <h5>{props.företagstyp}</h5>
           <PopupProfile />
+          <PrimaryButton text="Info" />
+
         </div>
       </div>
     </div>
