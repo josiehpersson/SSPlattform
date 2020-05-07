@@ -12,11 +12,11 @@ import './Components/components.css';
 //import StartPage from './StartPage/StartPage.js';
 //import InfoRad from './Components/InfoRad'
 //import ProfilBild from './Components/ProfilBild'
-import Konsultlåda from './Components/KonsultLådor/Konsultlåda';
+import KonsultSida from './Konsultsida/Konsultsida';
 function App() {
   return (
     <div className="App">
-      <Konsultlåda />
+      <KonsultSida />
     </div>
   );
 }

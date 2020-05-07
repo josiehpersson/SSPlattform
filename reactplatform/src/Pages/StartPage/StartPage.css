@@ -1,0 +1,112 @@
+.greeting {
+  background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
+  color: white;
+  padding: 30px;
+  margin: 0;
+  z-index: 2;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.blåPostit {
+  background: linear-gradient(180deg, #ffffff 0%, #d3f5ff 100%);
+  color: #00a2ff;
+}
+.gulPostit {
+  background: linear-gradient(180deg, #ffffff 0%, #ffe0c2 100%);
+  color: #ffb400;
+}
+.grönPostit {
+  background: linear-gradient(180deg, #ffffff 0%, #d6fbc1 100%);
+  color: #6dcf37;
+}
+.grönPostit,
+.gulPostit,
+.blåPostit {
+  width: 180px;
+  height: 138px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Viga;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+}
+
+
+
+.blåBadge,
+.gulBadge,
+.grönBadge {
+  display: flex;
+  flex-flow: row nowrap;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  max-height: 20px;
+  max-width: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  color: white;
+  position: relative;
+  top: -43px;
+  left: 10px;
+  box-sizing: border-box;
+}
+
+p.badgenumber {
+  padding-top: 15px;
+}
+.blåBadge {
+  background-color: #00a2ff;
+}
+.gulBadge {
+  background-color: #ffb400;
+}
+.grönBadge {
+  background-color: #6dcf37;
+}
+
+.start-page-container {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.postit-container {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-left: 70px;
+  margin-right: 70px;
+  position: absolute;
+  top: 55%;
+}
+.spacer {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 420px) {
+  .postit-container {
+    flex-direction: column;
+    top: 40%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .postit-container {
+    top: 33%;
+    margin-left: 28%;
+  }
+}
+
+@media only screen and (max-width: 1680px) {
+  .postit-container {
+    top: 20%;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .postit-container {
+    top: 30%;
+    margin-left: 28%;
+  }
+}

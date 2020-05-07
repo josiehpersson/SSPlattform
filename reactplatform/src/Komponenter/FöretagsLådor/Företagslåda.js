@@ -1,6 +1,6 @@
 import React from 'react';
 import ProfilBild from './ProfilBild';
-import PrimaryButton from '../PrimaryButton';
+import PrimaryButton from '../UI-komponenter/PrimaryButton';
 import PopupCompanyProfile from './PopupCompanyProfile';
 
 function Företagslåda(props) {
