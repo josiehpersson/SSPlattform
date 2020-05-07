@@ -1,9 +1,8 @@
 import React from 'react';
 import './StartPage.css';
-import '../UI-komponenter/components.css';
 
-import Header from '../../Komponenter/UI-komponenter/Header';
-import WeatherApp from '../../WeatherApp/WeatherApp.js';
+import Header from '../../Komponenter/Navbar/Header';
+import WeatherApp from './WeatherApp/WeatherApp.js';
 import Greeting from './Greeting.js';
 import Postit from './Postit.js';
 
