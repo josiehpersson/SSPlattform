@@ -16,6 +16,7 @@ function Företagslåda(props) {
           <h5>{props.företagstyp}</h5>
           <PopupProfile />
           <PrimaryButton text="Info" />
+
         </div>
       </div>
     </div>

@@ -1,4 +1,7 @@
 import React from 'react';
+import '../KonsultLådor/Lådor.css';
+import ProfilePic from '../KonsultLådor/profile.jpg';
+import Textfält from '../KonsultLådor/Textfält';
 import './Lådor.css';
 import ProfilePic from './profile.jpg';
 import Textfält from './Textfält';
@@ -6,6 +9,8 @@ import Textfält from './Textfält';
 function PopupProfile(props) {
   return (
     <div className="popup-profile-container">
+
+      <div class="primärknapp" id="infoBtn">
       <div class="PrimaryButton">
         <a href="#myModal" class="trigger-btn" data-toggle="modal">
           <i class="fas fa-id-badge"></i> Info

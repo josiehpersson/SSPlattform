@@ -356,6 +356,13 @@ p.badgenumber {
   position: relative;
   top: 120px;
   text-align: center;
+  width: 100%;
+}
+
+#infoBtn {
+  padding: 6px;
+  position: absolute;
+  left: 35%;
   width: 100px;
   height: 100px;
   background-color: grey;
