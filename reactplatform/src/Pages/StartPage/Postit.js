@@ -1,6 +1,6 @@
 import React from 'react';
 import Badge from './Badge';
-import './components.css';
+import './StartPage.css';
 function PostitRutor(props) {
   return (
     <div className={props.färg}>

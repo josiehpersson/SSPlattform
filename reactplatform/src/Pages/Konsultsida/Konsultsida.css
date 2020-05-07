@@ -1,0 +1,31 @@
+.header-content {
+    background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
+    width: 100%;
+    height: 100px;
+}
+.page-header {
+    z-index: 2;
+    color: white;
+    position: absolute;
+    top: 123px;
+    left: 113px;
+}
+
+.konsultsida-container {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+
+}
+.button-holder {
+    position: absolute;
+    display: flex;
+    flex-flow: row nowrap;
+    
+}

@@ -15,6 +15,7 @@ body {
   height: 100vh;
   width: 50vw;
   box-sizing: border-box;
+  align-self: center;
 }
 
 .InputDiv {
@@ -107,194 +108,10 @@ body {
   box-shadow: none;
 }
 
-.MaskotBoll {
-  position: absolute;
-  z-index: -1;
-  height: 120px;
-  width: 120px;
-  border-radius: 50px;
-  box-sizing: border-box;
-  box-shadow: 0px 17.8857px 35.7714px rgba(0, 0, 0, 0.25);
-}
-
-.Logotypeboll {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
 .logotype-svart {
   height: 50px;
   width: 35px;
   padding-bottom: 10px;
-}
-
-.gulboll {
-  background: linear-gradient(180deg, #ffb400 15.1%, #bdff00 100%);
-  box-shadow: 0px 17.8857px 35.7714px rgba(0, 0, 0, 0.25);
-  position: absolute;
-  z-index: -1;
-  height: 150px;
-  width: 150px;
-}
-
-.grönboll {
-  background: linear-gradient(180deg, #21a826 35.32%, #00b2ff 100%);
-  box-shadow: 0px 17.8857px 35.7714px rgba(0, 0, 0, 0.25);
-  transform: rotate(131.38deg);
-  position: absolute;
-  z-index: -1;
-  height: 100px;
-  width: 100px;
-}
-
-.blåboll {
-  background: linear-gradient(180deg, #ebee47 4.17%, #00b2ff 100%);
-  box-shadow: 0px 17.8857px 35.7714px rgba(0, 0, 0, 0.25);
-  transform: rotate(131.38deg);
-  position: absolute;
-  z-index: -1;
-  height: 200px;
-  width: 200px;
-}
-
-.blåPostit {
-  background: linear-gradient(180deg, #ffffff 0%, #d3f5ff 100%);
-  color: #00a2ff;
-}
-.gulPostit {
-  background: linear-gradient(180deg, #ffffff 0%, #ffe0c2 100%);
-  color: #ffb400;
-}
-.grönPostit {
-  background: linear-gradient(180deg, #ffffff 0%, #d6fbc1 100%);
-  color: #6dcf37;
-}
-.grönPostit,
-.gulPostit,
-.blåPostit {
-  width: 180px;
-  height: 138px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: Viga;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 32px;
-  text-align: center;
-}
-
-.blåBadge,
-.gulBadge,
-.grönBadge {
-  display: flex;
-  flex-flow: row nowrap;
-  vertical-align: middle;
-  align-items: center;
-  justify-content: center;
-  max-height: 20px;
-  max-width: 30px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 30px;
-  color: white;
-  position: relative;
-  top: -43px;
-  left: 10px;
-  box-sizing: border-box;
-}
-
-p.badgenumber {
-  padding-top: 15px;
-}
-.blåBadge {
-  background-color: #00a2ff;
-}
-.gulBadge {
-  background-color: #ffb400;
-}
-.grönBadge {
-  background-color: #6dcf37;
-}
-.greeting {
-  background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
-  color: white;
-  padding: 30px;
-  margin: 0;
-  z-index: 2;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
-}
-
-@media only screen and (max-width: 420px) {
-  .frostatGlas {
-    width: 70vw;
-  }
-  .gulboll {
-    display: none;
-  }
-  body {
-    height: 120vh;
-  }
-}
-
-@media only screen and (max-width: 1366px) {
-  .gulboll {
-    height: 300px;
-    width: 300px;
-  }
-  .grönboll {
-    width: 200px;
-    height: 200px;
-  }
-
-  .blåboll {
-    width: 400px;
-    height: 400px;
-  }
-  .MaskotBoll {
-    width: 240px;
-    height: 240px;
-  }
-}
-
-@media only screen and (max-width: 1680px) {
-  .gulboll {
-    height: 600px;
-    width: 600px;
-  }
-  .grönboll {
-    width: 400px;
-    height: 400px;
-  }
-
-  .blåboll {
-    width: 800px;
-    height: 800px;
-  }
-  .MaskotBoll {
-    width: 480px;
-    height: 480px;
-  }
-}
-
-@media only screen and (max-width: 1920px) {
-  .gulboll {
-    height: 700px;
-    width: 700px;
-  }
-  .grönboll {
-    width: 400px;
-    height: 400px;
-  }
-
-  .blåboll {
-    width: 800px;
-    height: 800px;
-  }
-  .MaskotBoll {
-    width: 500px;
-    height: 500px;
-  }
 }
 
 .top,
@@ -384,5 +201,4 @@ p.badgenumber {
   height: 100px;
   background-color: grey;
   border-radius: 50px;
-
 }

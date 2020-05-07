@@ -1,5 +1,5 @@
 import React from 'react';
-import './components.css';
+import './StartPage.css';
 function Badge(props) {
   return (
     <div className={props.badge}>

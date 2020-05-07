@@ -1,5 +1,5 @@
 import React from "react";
-import './components.css';
+import './StartPage.css';
 
 function Greeting(props) {
   const date = new Date();

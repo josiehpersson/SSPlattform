@@ -1,14 +1,11 @@
 import React from 'react';
 import './StartPage.css';
-import '../Components/components.css';
+import '../UI-komponenter/components.css';
 
-import Header from '../Components/Header';
-import WeatherApp from '../WeatherApp/WeatherApp.js';
-//import Boll from '../Components/Boll.js';
-//import Frostatglas from '../Components/Frostatglas.js';
-import Greeting from '../Components/Greeting.js';
-//import MaskotBoll from '../Components/maskotboll.js';
-import Postit from '../Components/Postit.js';
+import Header from '../../Komponenter/UI-komponenter/Header';
+import WeatherApp from '../../WeatherApp/WeatherApp.js';
+import Greeting from './Greeting.js';
+import Postit from './Postit.js';
 
 function StartPage () {
     const weatherstyles = {

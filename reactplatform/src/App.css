@@ -8,6 +8,7 @@ body {
     #fff8e9;
   padding: 0;
   overflow-x: hidden;
+  height: auto;
 }
 .App {
   display: flex;
