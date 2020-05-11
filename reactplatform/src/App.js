@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import LoginBackground from './Pages/LoginPages/LoginBackground';
+import FakturaCard from './Komponenter/PopupFaktura/FakturaCard';
 
 function App() {
   return (
     <div className="App">
-      <LoginBackground />
+      <FakturaCard />
     </div>
   );
 }
