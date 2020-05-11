@@ -46,12 +46,7 @@ class LoginForm extends React.Component {
     });
   };
 
-  handleSubmit = () => {
-    const data = {
-      mail: this.state.mail,
-      password: this.state.password,
-    };
-  };
+
   render() {
     return (
       <div className="window-container">
