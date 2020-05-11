@@ -21,7 +21,7 @@
 
 .menulink {
   padding-top: 15px;
-  color: white;
+  color: white !important;
   font-size: 8pt;
   font-weight: 100;
 }
@@ -32,13 +32,19 @@
   padding-top: 10px;
 }
 
+.menulink:hover, .menu-dropdown-link:hover, .menulink-dropdown:hover {
+  cursor: pointer;
+}
+
 .menu-dropdown {
+  position: absolute;
+  margin-right: 90px;
   overflow: none;
   background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
 }
 
 .menulink-dropdown {
-  color: white;
+  color:#3b5360 !important;
   font-size: 8pt;
   font-weight: 100;
 }
