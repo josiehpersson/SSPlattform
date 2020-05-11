@@ -7,6 +7,7 @@ import SearchBar from '../../Komponenter/UI-komponenter/SearchBar';
 import SecondaryButton from '../../Komponenter/UI-komponenter/SecondaryButton';
 
 import './Konsultsida.css';
+import '../../Komponenter/KonsultLådor/POPUPCSS.css';
 
 function KonsultSida (props) {
     return (

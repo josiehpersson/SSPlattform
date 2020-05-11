@@ -1,46 +1,46 @@
 .header-content {
-    background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
-    width: 100vw;
-    height: 100px;
-    overflow-x: hidden;
+  background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
+  width: 100vw;
+  height: 100px;
+  overflow-x: hidden;
 }
 .page-header {
-    z-index: 2;
-    color: white;
-    position: absolute;
-    top: 123px;
-    left: 113px;
+  z-index: 2;
+  color: white;
+  position: absolute;
+  top: 123px;
+  left: 113px;
 }
 
 .konsultsida-container {
-    position: relative;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    height: auto;
-    width: 100vw;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: auto;
+  width: 100vw;
 }
 .konsult-button-holder {
-    width: 40%;
-    position: absolute;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    TOP: 10px;
-    right: 60px;
+  width: 40%;
+  position: absolute;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 10px;
+  right: 60px;
 }
 
 .konsultlåda-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    width: 700px;
-    position: absolute;
-    left: 125px;
-    top: 250px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 700px;
+  position: absolute;
+  left: 125px;
+  top: 250px;
 }

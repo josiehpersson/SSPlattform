@@ -1,46 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './POPUPCSS.css';
-import ProfilePic from './profile.jpg';
+import ProfilBild from '../FöretagsLådor/ProfilBild';
+import PrimaryButton from '../UI-komponenter/PrimaryButton';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 function PopupCV(props) {
+  const [modal, setModal] = useState(false);
+
+  const toggle = () => setModal(!modal);
+
   return (
     <div>
-      <div className={props.className}>
-        <a href="#myCV" class="trigger-btn" data-toggle="modal">
-          <i class="fas fa-file-alt"></i> CV
-        </a>
-      </div>
-      <div id="myCV" class="modal fade">
-        <div class="modal-dialog modal-confirm">
-          <div class="modal-content">
-            <div class="modal-header">
-              <div className="user-info">
-                <img
-                  src={ProfilePic}
-                  alt="user profile picture"
-                  className="user-pic"
-                ></img>
-                <div className="user-name">
-                  <h1>Josephine</h1>
-                  <h3>Halkola Persson</h3>
-                  <h6>#43567</h6>
-                </div>
-              </div>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-hidden="true"
-              >
-                &times;
-              </button>
-            </div>
-            <div class="modal-body text-center">
-              <h4>KONSULTENS CV</h4>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Button className="popup-button" onClick={toggle}>
+        <i class="fas fa-file-alt"></i> CV
+      </Button>
+      <Modal isOpen={modal} toggle={toggle} className="popup-container">
+        <ModalHeader toggle={toggle} className="popup-header"></ModalHeader>
+        <ModalBody className="popup-body">
+          <ProfilBild top="-15px" />
+          <img src={props.konsultCV} alt="konsultens CV" />
+        </ModalBody>
+        <ModalFooter className="popup-footer">
+          <PrimaryButton text="MER" />
+        </ModalFooter>
+      </Modal>
     </div>
   );
 }

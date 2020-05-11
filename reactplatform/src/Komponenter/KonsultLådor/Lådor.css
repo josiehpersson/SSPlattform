@@ -61,6 +61,7 @@
   width: 20%;
   box-sizing: border-box;
   margin: 5px;
+  z-index: 1;
 
 }
 .konsult-header {
@@ -72,6 +73,7 @@
   display: flex;
   flex-flow: row;
   justify-content: center;
+  z-index: 1;
 }
 
 .profile-picture {
@@ -79,7 +81,7 @@
   width: 80px;
   border-radius: 40px;
   margin-top: 40px;
-  z-index: 1;
+  z-index: 2;
 }
 .konsult-body {
   display: flex;
@@ -97,6 +99,7 @@
   flex-flow: row nowrap;
   width: inherit;
   justify-content: space-evenly;
+  z-index: 2;
 }
 .konsult-info {
   position: relative;

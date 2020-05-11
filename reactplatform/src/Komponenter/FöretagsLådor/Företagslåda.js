@@ -11,9 +11,9 @@ function Företagslåda(props) {
       </div>
       <div className="boxBody">
         <div className="FöretagsInfo">
-          <h4>{props.företagsNamn}</h4>
-          <h6>{props.stadNamn}</h6>
-          <h5>{props.företagstyp}</h5>
+          <h4>{props.företagsNamn || 'Företagsnamn'}</h4>
+          <h6>{props.stadNamn || 'Stad'}</h6>
+          <h5>{props.företagstyp || 'Företagstyp'}</h5>
           <PopupCompanyProfile className="låda-primärknapp" />
           <PrimaryButton text="Info" />
         </div>

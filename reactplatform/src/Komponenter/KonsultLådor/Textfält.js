@@ -10,21 +10,11 @@ class Textfält extends React.Component {
   }
 
   render(props) {
-    let defaultContent = 'Lorem Ipsum';
-    if (
-      this.state.content === undefined ||
-      this.state.content === null ||
-      this.state.content === ''
-    ) {
-      this.setState = {
-        content: defaultContent,
-      };
-    }
     return (
       <div className="title-box">
         <p className="title-text">{this.props.titel}</p>
         <div className="content-box">
-          <p className="content-text">{this.state.content} Lorem ipsum</p>
+          <p className="content-text">{this.props.content}</p>
         </div>
       </div>
     );
