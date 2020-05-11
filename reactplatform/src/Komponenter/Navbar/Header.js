@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../UI-komponenter/logga.png';
 
 import './Header.css';
@@ -6,14 +7,20 @@ import './Header.css';
 function Header() {
   return (
     <div className="container">
-      <img src={Logo} alt="Shaya Solutions Logotype" className="logotype" />
+      <Link to="/start">
+        <img src={Logo} alt="Shaya Solutions Logotype" className="logotype" />
+      </Link>
       <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link menulink">FÖRETAG</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link menulink">KONSULT</a>
-        </li>
+        <Link to="/företag">
+          <li class="nav-item">
+            <a class="nav-link menulink">FÖRETAG</a>
+          </li>
+        </Link>
+        <Link to="/konsult">
+          <li class="nav-item">
+            <a class="nav-link menulink">KONSULT</a>
+          </li>
+        </Link>
         <li class="nav-item">
           <a class="nav-link menulink">FÖRFRÅGAN</a>
         </li>

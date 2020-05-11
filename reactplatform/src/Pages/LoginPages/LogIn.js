@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './LoginPages.css';
 import Logotype from '../../Komponenter/UI-komponenter/LoggaSvart';
 import Inputfält from '../../Komponenter/UI-komponenter/InputfältText';
@@ -45,19 +46,11 @@ class LoginForm extends React.Component {
     });
   };
 
-  onForgotClick = () => {
-    console.log('glömt lösenord klickat');
-  };
-
-  onRegisterClick = () => {
-    console.log('registrera klickat!');
-  };
   handleSubmit = () => {
     const data = {
       mail: this.state.mail,
       password: this.state.password,
     };
-    this.props.changeView('start');
   };
   render() {
     return (
@@ -91,26 +84,25 @@ class LoginForm extends React.Component {
               id="login-passinput"
             />
 
-            <PrimaryButton
-              text="Logga in"
-              onClick={this.handleSubmit}
-              isDisabled={this.formValidator.invalid}
-              id="login-primbutton"
-            />
-
-            <SecondaryButton
-              text="Registrera"
-              onClick={() => this.props.changeView('register')}
-              isDisabled={false}
-              id="login-secbutton"
-            />
+            <Link to="/start">
+              <PrimaryButton
+                text="Logga in"
+                onClick={this.handleSubmit}
+                isDisabled={this.formValidator.invalid}
+                id="login-primbutton"
+              />
+            </Link>
+            <Link to="/register">
+              <SecondaryButton
+                text="Registrera"
+                isDisabled={false}
+                id="login-secbutton"
+              />
+            </Link>
           </form>
-          <a
-            className="forgot-link"
-            onClick={() => this.props.changeView('forgot')}
-          >
-            Glömt lösenord?
-          </a>
+          <Link to="/forgot">
+            <h1 className="forgot-link">Glömt lösenord?</h1>
+          </Link>
 
           <MaskotBoll top="68%" right="1%" />
           <Boll className="grönboll" top="8%" left="5%" />

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './LoginPages.css';
 import Inputfält from '../../Komponenter/UI-komponenter/InputfältText';
 import PrimaryButton from '../../Komponenter/UI-komponenter/PrimaryButton';
@@ -97,7 +98,6 @@ class Register extends React.Component {
       phone: '',
       password: '',
     });
-    this.props.changeView('login');
   };
 
   render() {
@@ -158,19 +158,22 @@ class Register extends React.Component {
               id="register-passwordInput"
             />
 
-            <PrimaryButton
-              text="Registrera"
-              onClick={this.handleSubmit}
-              isDisabled={this.formValidator.invalid}
-              id="register-primbutton"
-            />
-
-            <SecondaryButton
-              text="Avbryt"
-              onClick={this.handleCancel}
-              isDisabled={false}
-              id="register-secbutton"
-            />
+            <Link to="/">
+              <PrimaryButton
+                text="SKICKA"
+                onClick={this.handleSubmit}
+                isDisabled={this.formValidator.invalid}
+                id="register-primbutton"
+              />
+            </Link>
+            <Link to="/">
+              <SecondaryButton
+                text="AVBRYT"
+                onClick={this.handleCancel}
+                isDisabled={false}
+                id="register-secbutton"
+              />
+            </Link>
           </form>
           <MaskotBoll top="68%" right="1%" />
           <Boll className="grönboll" top="8%" left="5%" />
