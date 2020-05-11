@@ -1,21 +1,21 @@
 import React from 'react';
 import ProfilBild from './ProfilBild';
-import PrimaryButton from '../UI-komponenter/PrimaryButton';
 import PopupCompanyProfile from './PopupCompanyProfile';
-
+import '../KonsultLådor/Lådor.css';
 function Företagslåda(props) {
   return (
-    <div className="FöretagsLådor">
-      <div className="boxNav">
-        <ProfilBild />
+    <div className="konsultlåda">
+      <div className="konsult-header">
+        <ProfilBild top="60px" />
       </div>
-      <div className="boxBody">
-        <div className="FöretagsInfo">
-          <h4>{props.företagsNamn || 'Företagsnamn'}</h4>
+      <div className="konsult-body">
+        <div className="konsult-info">
+          <h5>{props.företagsNamn || 'Företagsnamn'}</h5>
           <h6>{props.stadNamn || 'Stad'}</h6>
           <h5>{props.företagstyp || 'Företagstyp'}</h5>
-          <PopupCompanyProfile className="låda-primärknapp" />
-          <PrimaryButton text="Info" />
+        </div>
+        <div className="button-holder">
+          <PopupCompanyProfile />
         </div>
       </div>
     </div>
