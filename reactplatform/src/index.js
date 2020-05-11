@@ -8,12 +8,14 @@ import Register from './Pages/LoginPages/Register';
 import Start from './Pages/StartPage/StartPage';
 import Företag from './Pages/Företagssida/Företagssida';
 import Konsult from './Pages/Konsultsida/Konsultsida';
+import App from './App';
 
 const rootElement = document.getElementById('root');
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route exact path="/" component={Login} />
+    <Route exact path="/" component={App} />
+      <Route exact path="/login" component={Login} />
       <Route path="/forgot" component={Forgot} />
       <Route path="/register" component={Register} />
       <Route path="/start" component={Start} />
