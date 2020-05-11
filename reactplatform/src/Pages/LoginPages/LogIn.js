@@ -107,7 +107,7 @@ class LoginForm extends React.Component {
           </form>
           <a
             className="forgot-link"
-            onClick={() => this.props.changeView('forgot')}
+            href="/ForgotPassword"
           >
             Glömt lösenord?
           </a>
