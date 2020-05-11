@@ -1,56 +1,45 @@
-import React from 'react';
-import '../KonsultLådor/Lådor.css';
-import ProfilePic from '../KonsultLådor/profile.jpg';
+import React, { useState } from 'react';
+import '../KonsultLådor/POPUPCSS.css';
+import ProfilBild from '../FöretagsLådor/ProfilBild';
+import PrimaryButton from '../UI-komponenter/PrimaryButton';
 import Textfält from '../KonsultLådor/Textfält';
-
-import React from 'react';
-import './POPUPCSS.css';
-import ProfilePic from './profile.jpg';
-import Textfält from './Textfält';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 function PopupCompanyProfile(props) {
+  const [modal, setModal] = useState(false);
+
+  const toggle = () => setModal(!modal);
+
   return (
     <div>
-      <div className={props.className}>
-        <a href="#myCompanyProfile" class="trigger-btn" data-toggle="modal">
-          <i class="fas fa-user-circle"></i> Profil
-        </a>
-      </div>
-      <div id="myCompanyProfile" class="modal fade">
-        <div class="modal-dialog modal-confirm">
-          <div class="modal-content">
-            <div class="modal-header">
-              <div className="user-info">
-                <img
-                  src={ProfilePic}
-                  alt="user profile picture"
-                  className="user-pic"
-                ></img>
-                <div className="user-name">
-                  <h1>Josephine</h1>
-                  <h3>Halkola Persson</h3>
-                  <h6>#43567</h6>
-                </div>
-              </div>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-hidden="true"
-              >
-                &times;
-              </button>
-            </div>
-            <div class="modal-body" className="profile-info">
-              <Textfält titel="Adress" />
-              <Textfält titel="Organisationsnr." />
-              <Textfält titel="Bransch" />
-              <Textfält titel="Telefon" />
-              <Textfält titel="E-mail" />
-            </div>
-          </div>
-        </div>
-      </div>
+      <PrimaryButton onClick={toggle} text="INFO" />
+      <Modal isOpen={modal} toggle={toggle} className="popup-container">
+        <ModalHeader toggle={toggle} className="popup-header"></ModalHeader>
+        <ModalBody className="popup-body">
+          <ProfilBild top="-15px" />
+          <Textfält titel="Stad" content={props.företagstad || 'Stockholm'} />
+          <Textfält
+            titel="Kontakt"
+            content={props.företagadmin || 'Arne Bengtsson'}
+          />
+          <Textfält
+            titel="Organisationsnr."
+            content={props.organisationsnummer || '#2342'}
+          />
+          <Textfält titel="Bransch" content={props.företagbransch || 'IT'} />
+          <Textfält
+            titel="Telefon"
+            content={props.företagtelefon || '070-123 456 789'}
+          />
+          <Textfält
+            titel="E-mail"
+            content={props.företagmail || 'b@minemail.com'}
+          />
+        </ModalBody>
+        <ModalFooter className="popup-footer">
+          <PrimaryButton text="MER" />
+        </ModalFooter>
+      </Modal>
     </div>
   );
 }

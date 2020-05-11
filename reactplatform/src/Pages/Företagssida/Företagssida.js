@@ -1,14 +1,14 @@
 import React from 'react';
 import Header from '../../Komponenter/Navbar/Header';
-import Konsultlåda from '../../Komponenter/KonsultLådor/Konsultlåda';
+import Företagslåda from '../../Komponenter/FöretagsLådor/Företagslåda';
 import FrostatGlas from '../../Komponenter/UI-komponenter/Frostatglas';
 import Boll from '../../Komponenter/Bollar/Boll';
 import SearchBar from '../../Komponenter/UI-komponenter/SearchBar';
 import SecondaryButton from '../../Komponenter/UI-komponenter/SecondaryButton';
 
-import './Konsultsida.css';
+import '../Konsultsida/Konsultsida.css';
 
-function KonsultSida (props) {
+function FöretagSida (props) {
     return (
         <div>
             <Header />
@@ -20,7 +20,7 @@ function KonsultSida (props) {
                 top="70px"
                 left="100px" 
                 zIndex="1"/>
-                <h3 className="page-header">Konsult</h3>
+                <h3 className="page-header">Företag</h3>
                 <Boll
                 className="gulboll"
                 height="50px"
@@ -40,18 +40,18 @@ function KonsultSida (props) {
                     </div>
             </div>
                     <div className="konsultlåda-container">
-                        <Konsultlåda />
-                        <Konsultlåda />
-                        <Konsultlåda />
-                        <Konsultlåda />
-                        <Konsultlåda />
-                        <Konsultlåda />
-                        <Konsultlåda />
-                        <Konsultlåda />
+                        <Företagslåda />
+                        <Företagslåda />
+                        <Företagslåda />
+                        <Företagslåda />
+                        <Företagslåda />
+                        <Företagslåda />
+                        <Företagslåda />
+                        <Företagslåda />
                     </div>
                     
 
         </div>
     )
 }
-export default KonsultSida;
+export default FöretagSida;
