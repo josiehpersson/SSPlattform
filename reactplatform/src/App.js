@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import SkapaFaktura from './Komponenter/PopupFaktura/SkapaFaktura';
+import Fakturasida from './Pages/Fakturasida/Fakturasida';
 
 
 function App() {
   return (
     <div className="App">
-      <SkapaFaktura />
+      <Fakturasida />
     </div>
   );
 }
