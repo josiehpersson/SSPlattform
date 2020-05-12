@@ -17,6 +17,9 @@ body {
 }
 
 .frostatGlas {
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content: center;
   position: relative;
   background: rgba(255, 255, 255, 0.2);
   border: 0.5px solid #a3a3a3;

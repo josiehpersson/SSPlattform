@@ -156,6 +156,7 @@ td {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
+  z-index: 500;
 }
 
 .faktura-boll-text-container {
@@ -164,8 +165,8 @@ td {
   color: white;
   position: absolute;
   text-align: center;
-  left: 35px;
-  top: 28px;
+  margin-top: 35px;
+
 }
 
 .faktura-boll-rubrik {

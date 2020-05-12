@@ -1,4 +1,50 @@
 .faktura-sida-container {
 display: flex;
 flex-flow: column nowrap;
+z-index: 0;
+}
+
+.faktura {
+    color: white;
+    font-size: 18pt;
+    z-index: 100;
+}
+
+.fakturor-btn-holder {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-self: center;
+    width: 80%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 100px;
+    margin-bottom: 5px;
+}
+
+.filter-btn-holder {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 50%;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.faktura-holder {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin-top: -25px;
+    margin-left: 45px;    
+}
+
+.faktura-bollar {
+    z-index: 100;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 500px;
+    float: right;
+    margin-top: -30px;
+    margin-right: 80px;
+
 }

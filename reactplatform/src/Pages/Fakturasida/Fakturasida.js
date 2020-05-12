@@ -15,11 +15,13 @@ function Fakturasida(props) {
         <div className="faktura-sida-container">
             <Header />
             <div className="header-filler">
-            <p className="faktura-sida-rubrik">FAKTUROR</p>
-            <Boll className="grönboll" height="180px" width="180px" />
-            <Boll className="blåboll" height="80px" width="80px" />
-            <FakturaBoll className="gulboll" />
-            <FakturaBoll className="blåboll" />
+            <Boll className="grönboll" height="180px" width="180px" zIndex="9" left="70px" top="50px" />
+            <Boll className="blåboll" height="80px" width="80px" zIndex="10" left="200px" top="70px" />
+            <p className="faktura">FAKTUROR</p>
+            <div className="faktura-bollar">
+            <FakturaBoll />
+            <FakturaBoll className="gulboll"/>
+            </div>
             </div>
             <div className="frostatGlas">
                 <div className="fakturor-btn-holder">

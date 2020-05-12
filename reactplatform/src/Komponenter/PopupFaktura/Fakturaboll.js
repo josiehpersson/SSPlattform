@@ -5,7 +5,7 @@ import './PopupFaktura.css';
 function Fakturaboll (props) {
     return (
         <div className="faktura-boll-container">
-            <Boll className={props.className || 'blåboll'} left="10px" height="130px" width="130px"/>
+            <Boll className={props.className || 'blåboll'} height="150px" width="150px"/>
             <div className="faktura-boll-text-container">
             <p className="faktura-boll-rubrik">{props.rubrik || 'RUBRIK'}</p>
             <p className="faktura-boll-text">{props.summa || '23450'} SEK</p>
