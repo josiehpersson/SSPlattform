@@ -20,7 +20,6 @@ import Boll from '../../Komponenter/Bollar/Boll';
 import Offert from './Offert';
 import MaskotBoll from '../../Komponenter/Bollar/maskotboll';
 
-
 function Uppdragssida() {
   const [activeTab, setActiveTab] = useState('1');
 
@@ -32,22 +31,24 @@ function Uppdragssida() {
     <div>
       <Header />
       <div className="header-content">
-                <Boll 
-                className="grönboll"
-                height="150px"
-                width="150px"
-                top="70px"
-                left="100px" 
-                zIndex="1"/>
-                <h3 className="page-header">Konsult</h3>
-                <Boll
-                className="gulboll"
-                height="50px"
-                width="50px" 
-                top="180px"
-                left="187px"
-                zIndex="2"/>
-            </div>
+        <Boll
+          className="grönboll"
+          height="150px"
+          width="150px"
+          top="70px"
+          left="100px"
+          zIndex="1"
+        />
+        <h3 className="page-header">Konsult</h3>
+        <Boll
+          className="gulboll"
+          height="50px"
+          width="50px"
+          top="180px"
+          left="187px"
+          zIndex="2"
+        />
+      </div>
 
       <div className="frostatGlas">
         <div className="tabBox">
@@ -122,22 +123,21 @@ function Uppdragssida() {
                 <Col sm="12">
                   <h4>Offerter</h4>
                   <p>lorem </p>
-                  <Offert 
-                  företag="Ett bra"
-                  antal="3"
-                  uppdrag="IT/ Samhälle"
-                  tidsspan="2020/02/15 - 2020/06/19"
-                  timmar="700"
+                  <Offert
+                    företag="Ett bra"
+                    antal="3"
+                    uppdrag="IT/ Samhälle"
+                    tidsspan="2020/02/15 - 2020/06/19"
+                    timmar="700"
                   />
 
-                  <Offert 
-                  företag="Ett bra"
-                  antal="3"
-                  uppdrag="IT/ Samhälle"
-                  tidsspan="2020/02/15 - 2020/06/19"
-                  timmar="700"
+                  <Offert
+                    företag="Ett bra"
+                    antal="3"
+                    uppdrag="IT/ Samhälle"
+                    tidsspan="2020/02/15 - 2020/06/19"
+                    timmar="700"
                   />
-                  
                 </Col>
               </Row>
             </TabPane>
@@ -145,9 +145,9 @@ function Uppdragssida() {
         </div>
       </div>
       <MaskotBoll top="68%" right="1%" />
-          <Boll className="grönboll" top="58%" left="5%" />
-          <Boll className="gulboll" left="15%" bottom="-2%" />
-          <Boll className="blåboll" right="13%" top="-5%" />
+      <Boll className="grönboll" top="58%" left="5%" />
+      <Boll className="gulboll" left="15%" bottom="-2%" />
+      <Boll className="blåboll" right="13%" top="-5%" />
     </div>
   );
 }
