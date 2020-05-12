@@ -111,6 +111,13 @@ td {
   flex-flow: column nowrap;
   align-items: center;
 }
+
+.skapa-faktura-footer {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
 .popup-faktura-body {
   display: flex;
   flex-flow: column nowrap;
