@@ -98,6 +98,19 @@ td {
   left: 186px;
   top: 97px;
 }
+
+.skapa-faktura-rubrik {
+  position: absolute;
+  z-index: 9;
+  left: 195px;
+  top: 93px;
+}
+
+.skapa-faktura-inputcontainer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
 .popup-faktura-body {
   display: flex;
   flex-flow: column nowrap;
