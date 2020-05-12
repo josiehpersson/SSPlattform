@@ -79,8 +79,6 @@ function Uppdragssida() {
             <TabPane tabId="1">
               <Row>
                 <Col sm="12">
-                  <h4>Uppdrag</h4>
-                  <p>lorem </p>
                   <div className="InforaderUppdrag">
                     <InfoRadUppdrag
                       namn="Rara"
@@ -121,8 +119,6 @@ function Uppdragssida() {
             <TabPane tabId="2">
               <Row>
                 <Col sm="12">
-                  <h4>Offerter</h4>
-                  <p>lorem </p>
                   <Offert
                     företag="Ett bra"
                     antal="3"
