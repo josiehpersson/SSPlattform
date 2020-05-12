@@ -4,7 +4,7 @@ function ProfilBild(props){
     
     return(
        <div className="ProfilBild">
-           <img src={props.img} alt="Profile pic" className="Logotypeboll" />
+           <img src={props.img} alt={props.alt} className="Logotypeboll" />
        </div>     
     )
 }
