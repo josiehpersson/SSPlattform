@@ -3,21 +3,21 @@
 
 } */
 
-.InfoRad{
-margin:10px;
+.InfoRad {
+  margin: 10px;
 }
 
-.tabBox{
-    margin: 0;
-    position: absolute;
-    top: 370px;
-    left: 50%;
-    transform: translate(-60%, -50%);
+.tabBox {
+  margin: 0;
+  position: absolute;
+  top: 370px;
+  left: 50%;
+  transform: translate(-60%, -50%);
 }
 
 .header-content {
-    background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
-    width: 100vw;
-    height: 100px;
-    overflow-x: hidden;
-  }
+  background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
+  width: 100vw;
+  height: 100px;
+  overflow-x: hidden;
+}
