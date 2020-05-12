@@ -120,17 +120,17 @@ body {
   height: 45px;
 }
 
-.topRad{
+.topRad {
   background-color: #f4f4f4;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   text-align: start;
 }
-.ProfilePicInfolåda{
-  position:relative;
-  top:43px;
-  left:45px;
+.ProfilePicInfolåda {
+  position: relative;
+  top: 43px;
+  left: 45px;
 }
 
 .topRad h6,
@@ -138,8 +138,8 @@ body {
   margin: 10px;
 }
 
-h6{
-  padding:6px;
+h6 {
+  padding: 6px;
 }
 .uppgifter {
   color: white;
@@ -190,8 +190,6 @@ h6{
   left: 35%;
 }
 
-
-
 .form-control-sm,
 .fa-search:before {
   border-radius: 0;
@@ -211,6 +209,5 @@ h6{
   margin-right: -5;
   width: 100px;
   height: 100px;
-  background-color:none;
-
+  background-color: none;
 }
