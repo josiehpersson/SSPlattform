@@ -1,14 +1,15 @@
 .faktura-låda-container {
     position: relative;
     margin-top: 50px;
+    font-size: 10pt;
     width: 80%;
     height: 100px;
     text-align: center;
+    z-index: 1;
 }
 
 .faktura-låda-top {
     position: relative;
-    padding-left: 500px;
     width: 100%;
     height: 50%;
     background: #F4F4F4;
@@ -25,24 +26,6 @@ td {
     color: white;
 }
 
-.text-container-top, .text-container-bottom {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 15px;
-    width: 80%;
-    height: 100%;
-    float: right;
-}
-
-.text-container-top {
-    color: #3B5360;
-}
-
-.text-container-bottom {
-    color: white;
-    padding-right: 80px;
-}
-
 .faktura-låda-bottom {
     position: relative;
     width: 100%;
@@ -51,6 +34,41 @@ td {
 
 }
 
+.röd-badge, .grön-badge, .gul-badge, .orange-badge, .blå-badge, .grå-badge  {
+    font-size: 6pt;
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    padding-top: 4px;
+    width: 80px;
+    height: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.röd-badge {
+    background: linear-gradient(180deg, #CA0D0D 0%, #740000 100%);
+}
+
+.grön-badge {
+    background: linear-gradient(180deg, #6DCF37 0%, #256900 100%);
+}
+
+.gul-badge {
+    background: linear-gradient(180deg, #FFB400 0%, #946800 100%);
+}
+
+.orange-badge {
+    background: linear-gradient(180deg, #FF8A00 0%, #CD0000 100%);
+}
+
+.blå-badge {
+    background: linear-gradient(180deg, #00A2FF 0%, #004973 100%);
+}
+
+.grå-badge {
+    background: linear-gradient(180deg, #C9C9C9 0%, #151515 100%);
+}
 .popup-faktura-container {
     display: flex;
     flex-flow: row;
@@ -82,6 +100,7 @@ td {
     width: inherit;
     justify-content: space-between;
     margin-top: 120px;
+    padding-bottom: 20px;
 }
 .faktura-card-container {
     display: flex;

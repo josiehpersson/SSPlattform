@@ -1,9 +1,12 @@
 import React from 'react';
+import './PopupFaktura.css';
+import FakturaBadge from './FakturaBadge';
 
 function FakturaLåda(props) {
     return(
+        <div>
         <table className="faktura-låda-container" onClick={props.onClick}>
-        <tr id="faktura-låda-top">
+        <tr className="faktura-låda-top">
                 <th>Fakturanummer</th>
                 <th>Företag</th>
                 <th>Belopp</th>
@@ -15,10 +18,12 @@ function FakturaLåda(props) {
                 <td>{props.företag || 'Namn'}</td>
                 <td>{props.belopp || '500SEK'}</td>
                 <td>{props.förfallodatum || '23/07/09'}</td>
-                <td></td>
+                <td><FakturaBadge /></td>
 
             </tr>
         </table>
+
+        </div>
     )
 }
 
