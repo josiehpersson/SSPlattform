@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './PopupFaktura.css';
 import { Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import Boll from '../Bollar/Boll';
+import FakturaLåda from './FakturaLåda';
 
 function PopupFaktura(props) {
   const [modal, setModal] = useState(false);
@@ -10,9 +11,7 @@ function PopupFaktura(props) {
 
   return (
     <div>
-      <Button className="popup-button" onClick={toggle}>
-        <i class="fas fa-file-alt"></i> FAKTURA
-      </Button>
+        <FakturaLåda onClick={toggle} />
       <Modal isOpen={modal} toggle={toggle} className="popup-faktura-container">
         <ModalHeader
           toggle={toggle}
