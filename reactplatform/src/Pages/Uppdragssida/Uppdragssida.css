@@ -9,10 +9,10 @@
 
 .tabBox {
   margin: 0;
-  position: absolute;
-  top: 370px;
-  left: 50%;
-  transform: translate(-60%, -50%);
+  position: static;
+  top: 20%;
+  left: 5%;
+  transform: translate(20%, 5%);
 }
 
 .header-content {
