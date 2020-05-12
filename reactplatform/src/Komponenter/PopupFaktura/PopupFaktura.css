@@ -1,3 +1,7 @@
+.faktura-holder {
+  z-index: 100;
+}
+
 .faktura-låda-container {
   position: relative;
   margin-top: 50px;
