@@ -1,13 +1,16 @@
 .faktura-sida-container {
 display: flex;
 flex-flow: column nowrap;
-z-index: 0;
 }
 
-.faktura {
+.sid-rubrik {
     color: white;
+    position: relative;
     font-size: 18pt;
-    z-index: 100;
+    z-index: 3;
+    margin-left: 100px;
+    margin-top: 70px;
+
 }
 
 .fakturor-btn-holder {
@@ -39,12 +42,11 @@ z-index: 0;
 }
 
 .faktura-bollar {
-    z-index: 100;
     display: flex;
     flex-flow: row nowrap;
     width: 500px;
     float: right;
-    margin-top: -30px;
+    margin-top: -90px;
     margin-right: 80px;
 
 }

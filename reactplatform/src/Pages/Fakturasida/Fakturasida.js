@@ -15,9 +15,9 @@ function Fakturasida(props) {
         <div className="faktura-sida-container">
             <Header />
             <div className="header-filler">
-            <Boll className="grönboll" height="180px" width="180px" zIndex="9" left="70px" top="50px" />
-            <Boll className="blåboll" height="80px" width="80px" zIndex="10" left="200px" top="70px" />
-            <p className="faktura">FAKTUROR</p>
+            <Boll className="grönboll" height="180px" width="180px" zIndex="1" left="70px" top="50px" />
+            <Boll className="blåboll" height="80px" width="80px" zIndex="2" left="230px" top="70px" />
+            <p className="sid-rubrik">FAKTUROR</p>
             <div className="faktura-bollar">
             <FakturaBoll />
             <FakturaBoll className="gulboll"/>
