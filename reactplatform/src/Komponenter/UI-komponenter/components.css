@@ -142,13 +142,12 @@ body {
 }
 
 .ProfilBild {
-  width: 70px;
   height: 70px;
+  width: 70px;
+  object-fit: cover;
+  border-radius: 50%;
   background-color: grey;
-  border-radius: 50px;
   position: absolute;
-  top: 90%;
-  left: 50%;
   transform: translate(-50%, -50%);
 }
 

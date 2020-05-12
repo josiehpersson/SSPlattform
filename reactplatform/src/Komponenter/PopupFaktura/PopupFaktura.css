@@ -1,0 +1,127 @@
+.faktura-låda-container {
+  position: relative;
+  margin-top: 50px;
+  font-size: 10pt;
+  width: 80%;
+  height: 100px;
+  text-align: center;
+  z-index: 1;
+}
+
+.faktura-låda-top {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background: #f4f4f4;
+  opacity: 0.8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #3b5360;
+}
+
+th {
+  color: #3b5360;
+}
+
+td {
+  color: white;
+}
+
+.faktura-låda-bottom {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
+}
+
+.röd-badge,
+.grön-badge,
+.gul-badge,
+.orange-badge,
+.blå-badge,
+.grå-badge {
+  font-size: 6pt;
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  padding-top: 4px;
+  width: 80px;
+  height: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.röd-badge {
+  background: linear-gradient(180deg, #ca0d0d 0%, #740000 100%);
+}
+
+.grön-badge {
+  background: linear-gradient(180deg, #6dcf37 0%, #256900 100%);
+}
+
+.gul-badge {
+  background: linear-gradient(180deg, #ffb400 0%, #946800 100%);
+}
+
+.orange-badge {
+  background: linear-gradient(180deg, #ff8a00 0%, #cd0000 100%);
+}
+
+.blå-badge {
+  background: linear-gradient(180deg, #00a2ff 0%, #004973 100%);
+}
+
+.grå-badge {
+  background: linear-gradient(180deg, #c9c9c9 0%, #151515 100%);
+}
+.popup-faktura-container {
+  display: flex;
+  flex-flow: row;
+  box-sizing: border-box;
+}
+
+.popup-faktura-header {
+  display: flex;
+  flex-flow: row;
+  width: inherit;
+  height: 75px;
+  margin-top: 0px;
+  text-align: start;
+  padding-left: 20px;
+  background: #6dcf37;
+  color: white;
+  font-size: 18pt;
+}
+
+.faktura-rubrik {
+  position: absolute;
+  z-index: 9;
+  left: 186px;
+  top: 97px;
+}
+.popup-faktura-body {
+  display: flex;
+  flex-flow: column nowrap;
+  width: inherit;
+  justify-content: space-between;
+  margin-top: 120px;
+  padding-bottom: 20px;
+}
+.faktura-card-container {
+  display: flex;
+  flex-flow: row nowrap;
+  height: inherit;
+  box-sizing: border-box;
+  width: inherit;
+  justify-content: space-evenly;
+}
+.faktura-card {
+  font-size: 6pt;
+  line-height: 0.1em;
+  background: #f3f3f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: auto;
+  width: 200px;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
