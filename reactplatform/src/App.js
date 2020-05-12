@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import FakturaCard from './Komponenter/PopupFaktura/FakturaCard';
+import PopupFaktura from './Komponenter/PopupFaktura/PopupFaktura';
 
 function App() {
   return (
     <div className="App">
-      <FakturaCard />
+      <PopupFaktura />
     </div>
   );
 }
