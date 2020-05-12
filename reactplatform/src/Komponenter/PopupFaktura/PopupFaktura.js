@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './PopupFaktura.css';
-import { Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 import Boll from '../Bollar/Boll';
 import FakturaLåda from './FakturaLåda';
 
