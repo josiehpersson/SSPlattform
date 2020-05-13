@@ -2,9 +2,40 @@
 
 
 } */
+.uppdragssida-container {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: auto;
+  width: 100vw;
+}
 
+.uppdrag-page-header {
+  z-index: 2;
+  color: white;
+  position: absolute;
+  top: 147px;
+  margin-left: 125px;
+}
+.uppdrag-button-holder {
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 380px;
+  margin-top: 100px;
+  margin-bottom: -50px;
+}
 .InfoRad {
   margin: 10px;
+  
 }
 
 .tabBox {
@@ -13,11 +44,6 @@
   top: 20%;
   left: 5%;
   transform: translate(20%, 5%);
+  
 }
 
-.header-content {
-  background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
-  width: 100vw;
-  height: 100px;
-  overflow-x: hidden;
-}

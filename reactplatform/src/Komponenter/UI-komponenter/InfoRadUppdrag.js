@@ -11,27 +11,27 @@ function InfoRad(props) {
         </div>
 
         <div>
-          <h6>NAMN</h6>
-          <h6 className="uppgifter">{props.namn}</h6>
+          <p className="inforad-rubrik">FÖRETAG</p>
+          <p className="inforad-uppgifter">{props.namn}</p>
         </div>
 
         <div>
-          <h6>UPPDRAG</h6>
-          <h6 className="uppgifter">{props.uppdrag}</h6>
+          <p className="inforad-rubrik">UPPDRAG</p>
+          <p className="inforad-uppgifter">{props.uppdrag}</p>
         </div>
 
         <div>
-          <h6>START/SLUT</h6>
-          <h6 className="uppgifter">{props.tidsspan}</h6>
+          <p className="inforad-rubrik">START/SLUT</p>
+          <p className="inforad-uppgifter">{props.tidsspan}</p>
         </div>
 
         <div>
-          <h6>PRIS/H</h6>
-          <h6 className="uppgifter">{props.pris}</h6>
+          <p className="inforad-rubrik">TIMMAR</p>
+          <p className="inforad-uppgifter">{props.pris}</p>
         </div>
 
         <div>
-          <h6>STATUS</h6>
+          <p className="inforad-rubrik">STATUS</p>
           <StatusPlupp />
         </div>
       </div>

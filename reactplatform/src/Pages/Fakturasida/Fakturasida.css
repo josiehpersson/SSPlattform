@@ -1,52 +1,50 @@
 .faktura-sida-container {
-display: flex;
-flex-flow: column nowrap;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .sid-rubrik {
-    color: white;
-    position: relative;
-    font-size: 18pt;
-    z-index: 3;
-    margin-left: 100px;
-    margin-top: 70px;
-
+  color: white;
+  position: relative;
+  font-size: 18pt;
+  z-index: 3;
+  margin-left: 100px;
+  margin-top: 70px;
 }
 
 .fakturor-btn-holder {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-self: center;
-    width: 80%;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-top: 100px;
-    margin-bottom: 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-self: center;
+  width: 80%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 100px;
+  margin-bottom: 5px;
 }
 
 .filter-btn-holder {
-    display: flex;
-    flex-flow: row nowrap;
-    width: 50%;
-    justify-content: space-between;
-    margin-bottom: 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 50%;
+  justify-content: space-between;
+  margin-bottom: 0px;
 }
 
 .faktura-holder {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 100%;
-    margin-top: -25px;
-    margin-left: 45px;    
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  margin-top: -25px;
+  margin-left: 45px;
 }
 
 .faktura-bollar {
-    display: flex;
-    flex-flow: row nowrap;
-    width: 500px;
-    float: right;
-    margin-top: -90px;
-    margin-right: 80px;
-
+  display: flex;
+  flex-flow: row nowrap;
+  width: 500px;
+  float: right;
+  margin-top: -90px;
+  margin-right: 80px;
 }

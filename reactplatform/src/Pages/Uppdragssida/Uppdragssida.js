@@ -13,6 +13,9 @@ import {
   Col,
 } from 'reactstrap';
 import classnames from 'classnames';
+import SecondaryButton from '../../Komponenter/UI-komponenter/SecondaryButton';
+import PrimaryButton from '../../Komponenter/UI-komponenter/PrimaryButton';
+import SearchBar from '../../Komponenter/UI-komponenter/SearchBar';
 import InfoRadUppdrag from '../../Komponenter/UI-komponenter/InfoRadUppdrag';
 import './Uppdragssida.css';
 import Header from '../../Komponenter/Navbar/Header';
@@ -28,29 +31,34 @@ function Uppdragssida() {
   };
 
   return (
-    <div>
+<div className="uppdragssida-container">
       <Header />
-      <div className="header-content">
+      <div className="header-filler">
         <Boll
           className="grönboll"
-          height="150px"
-          width="150px"
+          height="180px"
+          width="180px"
           top="70px"
           left="100px"
           zIndex="1"
         />
-        <h3 className="page-header">Konsult</h3>
+        <h3 className="uppdrag-page-header">UPPDRAG</h3>
         <Boll
           className="gulboll"
           height="50px"
           width="50px"
-          top="180px"
-          left="187px"
+          top="210px"
+          left="210px"
           zIndex="2"
         />
       </div>
 
       <div className="frostatGlas">
+      <div className="uppdrag-button-holder">
+        <PrimaryButton text="+ SKAPA " />
+          <SecondaryButton text="FILTER" />
+          <SearchBar />
+        </div>
         <div className="tabBox">
           <Nav tabs>
             <NavItem>

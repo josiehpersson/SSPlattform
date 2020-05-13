@@ -21,12 +21,16 @@ function Header() {
             <a class="nav-link menulink">KONSULT</a>
           </li>
         </Link>
+        <Link to="/uppdrag">
         <li class="nav-item">
           <a class="nav-link menulink">UPPDRAG</a>
         </li>
+        </Link>
+        <Link to="/faktura">
         <li class="nav-item">
           <a class="nav-link menulink">FAKTURA</a>
         </li>
+        </Link>
         <li class="nav-item">
           <a class="nav-link menulink">TIDRAPPORT</a>
         </li>
