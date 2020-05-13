@@ -1,57 +1,53 @@
 import React from 'react';
 import Header from '../../Komponenter/Navbar/Header';
 import Företagslåda from '../../Komponenter/FöretagsLådor/Företagslåda';
-import FrostatGlas from '../../Komponenter/UI-komponenter/Frostatglas';
 import Boll from '../../Komponenter/Bollar/Boll';
 import SearchBar from '../../Komponenter/UI-komponenter/SearchBar';
 import SecondaryButton from '../../Komponenter/UI-komponenter/SecondaryButton';
 
-import '../Konsultsida/Konsultsida.css';
+import './Företagssida.css';
 
-function FöretagSida (props) {
+function FöretagSida(props) {
     return (
-        <div>
-            <Header />
-            <div className="header-content">
-                <Boll 
-                className="grönboll"
-                height="150px"
-                width="150px"
-                top="70px"
-                left="100px" 
-                zIndex="1"/>
-                <h3 className="page-header">Företag</h3>
-                <Boll
-                className="gulboll"
-                height="50px"
-                width="50px" 
-                top="180px"
-                left="187px"
-                zIndex="2"/>
-            </div>
-
-            <div className="konsultsida-container">
-                <FrostatGlas height="700px" width="800px">
-                </FrostatGlas>
-                    <div className="konsult-button-holder">
-                        <SecondaryButton 
-                        text="Filter" />
-                        <SearchBar />
-                    </div>
-            </div>
-                    <div className="konsultlåda-container">
-                        <Företagslåda />
-                        <Företagslåda />
-                        <Företagslåda />
-                        <Företagslåda />
-                        <Företagslåda />
-                        <Företagslåda />
-                        <Företagslåda />
-                        <Företagslåda />
-                    </div>
-                    
-
+      <div className="företagsida-container">
+        <Header />
+        <div className="header-filler">
+          <Boll
+            className="grönboll"
+            height="180px"
+            width="180px"
+            top="70px"
+            left="100px"
+            zIndex="1"
+          />
+          <h3 className="företag-page-header">FÖRETAG</h3>
+          <Boll
+            className="gulboll"
+            height="50px"
+            width="50px"
+            top="210px"
+            left="210px"
+            zIndex="2"
+          />
         </div>
-    )
-}
-export default FöretagSida;
+  
+        <div className="frostatGlas">
+          <div className="företag-button-holder">
+            <SecondaryButton text="Filter" />
+            <SearchBar />
+          </div>
+        <div className="företagslåda-container">
+          <Företagslåda />
+          <Företagslåda />
+          <Företagslåda />
+          <Företagslåda />
+          <Företagslåda />
+          <Företagslåda />
+          <Företagslåda />
+          <Företagslåda />
+        </div>
+        </div>
+      </div>
+    );
+  }
+  export default FöretagSida;

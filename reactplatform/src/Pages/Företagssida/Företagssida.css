@@ -1,18 +1,13 @@
-.header-content {
-  background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
-  width: 100vw;
-  height: 100px;
-  overflow-x: hidden;
-}
-.page-header {
+
+.företag-page-header {
   z-index: 2;
   color: white;
   position: absolute;
   top: 147px;
-  left: 113px;
+  margin-left: 130px;
 }
 
-.konsultsida-container {
+.företagsida-container {
   position: relative;
   display: flex;
   flex-flow: column;
@@ -24,7 +19,7 @@
   height: auto;
   width: 100vw;
 }
-.konsult-button-holder {
+.företag-button-holder {
   width: 40%;
   position: relative;
   display: flex;
@@ -35,7 +30,7 @@
   margin-top: 100px;
 }
 
-.konsultlåda-container {
+.företagslåda-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;

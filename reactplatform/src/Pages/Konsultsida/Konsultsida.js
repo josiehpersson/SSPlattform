@@ -10,24 +10,24 @@ import './Konsultsida.css';
 
 function KonsultSida(props) {
   return (
-    <div>
+    <div className="konsultsida-container">
       <Header />
       <div className="header-filler">
         <Boll
           className="grönboll"
-          height="150px"
-          width="150px"
+          height="180px"
+          width="180px"
           top="70px"
           left="100px"
           zIndex="1"
         />
-        <h3 className="page-header">Konsult</h3>
+        <h3 className="page-header">KONSULTER</h3>
         <Boll
           className="gulboll"
           height="50px"
           width="50px"
-          top="180px"
-          left="187px"
+          top="210px"
+          left="210px"
           zIndex="2"
         />
       </div>
@@ -37,7 +37,6 @@ function KonsultSida(props) {
           <SecondaryButton text="Filter" />
           <SearchBar />
         </div>
-      </div>
       <div className="konsultlåda-container">
         <Konsultlåda />
         <Konsultlåda />
@@ -47,6 +46,7 @@ function KonsultSida(props) {
         <Konsultlåda />
         <Konsultlåda />
         <Konsultlåda />
+      </div>
       </div>
     </div>
   );
