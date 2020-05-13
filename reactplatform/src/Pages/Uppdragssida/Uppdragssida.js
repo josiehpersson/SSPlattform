@@ -22,7 +22,7 @@ import Header from '../../Komponenter/Navbar/Header';
 import Boll from '../../Komponenter/Bollar/Boll';
 import Offert from './Offert';
 import MaskotBoll from '../../Komponenter/Bollar/maskotboll';
-
+import FilterPopup from '../../Komponenter/Filter/FilterPopup';
 function Uppdragssida() {
   const [activeTab, setActiveTab] = useState('1');
 
@@ -56,7 +56,7 @@ function Uppdragssida() {
       <div className="frostatGlas">
       <div className="uppdrag-button-holder">
         <PrimaryButton text="+ SKAPA " />
-          <SecondaryButton text="FILTER" />
+          <FilterPopup />
           <SearchBar />
         </div>
         <div className="tabBox">

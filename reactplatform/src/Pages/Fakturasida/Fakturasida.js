@@ -3,8 +3,8 @@ import './Fakturasida.css';
 import Header from '../../Komponenter/Navbar/Header';
 import Boll from '../../Komponenter/Bollar/Boll';
 import MaskotBoll from '../../Komponenter/Bollar/maskotboll';
-import SecondaryButton from '../../Komponenter/UI-komponenter/SecondaryButton';
 import SearchBar from '../../Komponenter/UI-komponenter/SearchBar';
+import FilterPopup from '../../Komponenter/Filter/FilterPopup';
 
 import PopupFaktura from '../../Komponenter/PopupFaktura/PopupFaktura';
 import FakturaBoll from '../../Komponenter/PopupFaktura/Fakturaboll';
@@ -27,7 +27,7 @@ function Fakturasida(props) {
                 <div className="fakturor-btn-holder">
                     <SkapaFaktura />
                     <div className="filter-btn-holder">
-                        <SecondaryButton text="FILTER" />
+                        <FilterPopup />
                         <SearchBar />
                     </div>
                 </div>

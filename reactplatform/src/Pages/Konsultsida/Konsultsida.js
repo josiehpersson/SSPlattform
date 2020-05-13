@@ -4,8 +4,7 @@ import Konsultlåda from '../../Komponenter/KonsultLådor/Konsultlåda';
 import FrostatGlas from '../../Komponenter/UI-komponenter/Frostatglas';
 import Boll from '../../Komponenter/Bollar/Boll';
 import SearchBar from '../../Komponenter/UI-komponenter/SearchBar';
-import SecondaryButton from '../../Komponenter/UI-komponenter/SecondaryButton';
-
+import FilterPopup from '../../Komponenter/Filter/FilterPopup';
 import './Konsultsida.css';
 
 function KonsultSida(props) {
@@ -34,7 +33,7 @@ function KonsultSida(props) {
 
       <div className="frostatGlas">
         <div className="konsult-button-holder">
-          <SecondaryButton text="Filter" />
+          <FilterPopup />
           <SearchBar />
         </div>
       <div className="konsultlåda-container">

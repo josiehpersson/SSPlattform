@@ -3,8 +3,7 @@ import Header from '../../Komponenter/Navbar/Header';
 import Företagslåda from '../../Komponenter/FöretagsLådor/Företagslåda';
 import Boll from '../../Komponenter/Bollar/Boll';
 import SearchBar from '../../Komponenter/UI-komponenter/SearchBar';
-import SecondaryButton from '../../Komponenter/UI-komponenter/SecondaryButton';
-
+import FilterPopup from '../../Komponenter/Filter/FilterPopup';
 import './Företagssida.css';
 
 function FöretagSida(props) {
@@ -33,7 +32,7 @@ function FöretagSida(props) {
   
         <div className="frostatGlas">
           <div className="företag-button-holder">
-            <SecondaryButton text="Filter" />
+            <FilterPopup />
             <SearchBar />
           </div>
         <div className="företagslåda-container">
