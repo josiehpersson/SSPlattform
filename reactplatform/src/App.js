@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import Fakturasida from './Pages/Fakturasida/Fakturasida';
+import TidrappLåda from './Komponenter/TidrappLåda/TidrappLåda';
 
 
 function App() {
   return (
     <div className="App">
-      <Fakturasida />
+      <TidrappLåda />
     </div>
   );
 }
