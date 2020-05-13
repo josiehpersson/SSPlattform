@@ -41,3 +41,30 @@ body {
   background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
   width: inherit;
 }
+
+.frostatGlas::-webkit-scrollbar {
+  width: 0px;
+}
+
+.frostatGlas::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.frostatGlas::-webkit-scrollbar-thumb {
+  background: transparent; 
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent; 
+}

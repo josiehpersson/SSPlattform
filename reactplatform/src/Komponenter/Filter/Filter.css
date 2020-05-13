@@ -1,0 +1,22 @@
+.filter-form-container {
+  width: 300px;
+  font-size: 10pt;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 10px;
+  background: linear-gradient(
+      358.35deg,
+      #00a2ff 0.69%,
+      rgba(255, 255, 255, 0) 98.83%
+    ),
+    #6dcf37;
+  box-shadow: 0px 17.8857px 17.8857px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+.filter-form-header {
+  font-size: 16pt;
+  margin-top: 10px;
+  margin-left: 75px;
+  margin-bottom: 10px;
+}

@@ -6,7 +6,7 @@ function Företagslåda(props) {
   return (
     <div className="konsultlåda">
       <div className="konsult-header">
-        <ProfilBild top="5px" />
+        <ProfilBild top="45px" right="20px" />
       </div>
       <div className="konsult-body">
         <div className="konsult-info">
