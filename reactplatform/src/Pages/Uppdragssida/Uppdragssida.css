@@ -1,0 +1,23 @@
+/* .InforaderUppdrag{
+
+
+} */
+
+.InfoRad {
+  margin: 10px;
+}
+
+.tabBox {
+  margin: 0;
+  position: static;
+  top: 20%;
+  left: 5%;
+  transform: translate(20%, 5%);
+}
+
+.header-content {
+  background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
+  width: 100vw;
+  height: 100px;
+  overflow-x: hidden;
+}

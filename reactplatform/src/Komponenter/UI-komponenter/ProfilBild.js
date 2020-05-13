@@ -1,29 +1,12 @@
-import React from "react";
-import './components.css';
-import { Container } from "reactstrap";
 
-function ProfilBild(props){
-    const imgstyle = {
-        width: 70,
-        height: 70,
-        backgroundColor: 'grey',
-        zIndex: 'inherit'
-    }
+import React from 'react';
 
-    const containerstyle = {
-        top: props.top,
-        bottom: props.bottom,
-        left: props.left,
-        right: props.right,
-        zIndex: props.zIndex,
-    }
-    
-    return(
-       <div style={containerstyle}>
-           <img src={props.img} alt="P" className="ProfilBild" style={imgstyle}/>
-       </div>     
-    )
+function ProfilBild(props) {
+  return (
+    <div className="ProfilBild">
+      <img src={props.img} alt={props.alt} className="Logotypeboll" />
+    </div>
+  );
 }
 
-
-export default ProfilBild
+export default ProfilBild;

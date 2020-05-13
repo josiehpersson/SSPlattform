@@ -99,40 +99,50 @@ body {
   padding-bottom: 10px;
 }
 
-.top,
-.bottom {
-  width: 50%;
-  height: 35px;
+.topRad,
+.bottomRad {
+  width: 70%;
+  height: 45px;
 }
 
-.top {
+.topRad {
   background-color: #f4f4f4;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   text-align: start;
 }
+.ProfilePicInfolåda {
+  position: relative;
+  top: 43px;
+  left: 45px;
+}
 
-.top h6,
-.bottom h6 {
+.topRad h6,
+.bottomRad h6 {
   margin: 10px;
 }
 
+h6 {
+  padding: 6px;
+}
 .uppgifter {
   color: white;
 }
 
-.bottom {
+.bottomRad {
   background: linear-gradient(270deg, #6dcf37 0%, #00a2ff 100%);
 }
 
 .ProfilBild {
-  height: 70px;
-  width: 70px;
-  object-fit: cover;
-  border-radius: 50%;
+
+  width: 70px !important;
+  height: 70px !important;
   background-color: grey;
-  position: absolute;
+  border-radius: 50px;
+  /* position: absolute; */
+  top: 90%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -185,6 +195,5 @@ body {
   margin-right: -5;
   width: 100px;
   height: 100px;
-  background-color:none;
-
+  background-color: none;
 }
