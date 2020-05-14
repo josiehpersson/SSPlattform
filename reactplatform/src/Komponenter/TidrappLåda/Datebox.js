@@ -5,10 +5,10 @@ function Datebox (props) {
     return (
         <table className="datebox-container">
             <thead className="datebox-head">
-               <p>text</p> 
+               <p>{props.datum || 'datum'}</p> 
             </thead>
             <tbody className={props.className}>
-            <p>text</p>
+            <p>{props.timmar || '0 h'}</p>
             </tbody>
         </table>
     )

@@ -51,3 +51,12 @@
     flex-flow: column nowrap;
     justify-content: space-evenly;
 }
+
+.vecko-nummer-text {
+  font-size: 8pt;
+  z-index: 3;
+  position: static;
+  left: 22px;
+  margin-top: 2px;
+  color:white;
+}
