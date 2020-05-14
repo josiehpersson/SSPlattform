@@ -60,3 +60,17 @@
   margin-top: 2px;
   color:white;
 }
+
+.popup-kommentar-header {
+  background-color: #00A2FF;
+}
+
+.kommentar-label {
+  color: #3b5360;
+}
+
+.kommentar-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
