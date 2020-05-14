@@ -31,7 +31,7 @@ function Uppdragssida() {
   };
 
   return (
-<div className="uppdragssida-container">
+    <div className="uppdragssida-container">
       <Header />
       <div className="header-filler">
         <Boll
@@ -54,8 +54,8 @@ function Uppdragssida() {
       </div>
 
       <div className="frostatGlas">
-      <div className="uppdrag-button-holder">
-        <PrimaryButton text="+ SKAPA " />
+        <div className="uppdrag-button-holder">
+          <PrimaryButton text="+ SKAPA " />
           <FilterPopup />
           <SearchBar />
         </div>
