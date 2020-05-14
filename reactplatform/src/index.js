@@ -14,6 +14,7 @@ import Tidrapport from './Pages/Tidrapportsida/Tidrapportsida';
 import TidrapportDetalj from './Pages/Tidrapportsida/Detaljtidrappsida';
 import Inställningar from './Pages/Inställningarsida/Inställningar';
 import Statistik from './Pages/Statistiksida/Statistiksida';
+import Åtkomst from './Pages/Åtkomst/Åtkomst';
 import App from './App';
 
 const rootElement = document.getElementById('root');
@@ -32,6 +33,7 @@ ReactDOM.render(
       <Route path="/tidrapportdetalj" component={TidrapportDetalj} />
       <Route path="/inställningar" component={Inställningar} />
       <Route path="/statistik" component={Statistik} />
+      <Route path="/åtkomst" component={Åtkomst} />
     </Switch>
   </BrowserRouter>,
   rootElement

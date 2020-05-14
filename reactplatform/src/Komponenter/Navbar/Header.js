@@ -48,9 +48,11 @@ function Header() {
             <i class="fas fa-user-circle"></i>
           </a>
           <div class="dropdown-menu menu-dropdown">
+            <Link to="/åtkomst">
             <a class="dropdown-item menulink-dropdown">
               <i class="fas fa-users-cog"></i> ÅTKOMST
             </a>
+            </Link>
             <Link to="/inställningar">
             <a class="dropdown-item menulink-dropdown">
               <i class="fas fa-cog"></i> INSTÄLLNINGAR
