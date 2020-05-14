@@ -24,26 +24,28 @@
 }
 .uppdrag-button-holder {
   width: 50%;
-  position: relative;
+  position: absolute;
+  top: 25px;
+  right: 122px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-left: 380px;
-  margin-top: 100px;
-  margin-bottom: -50px;
 }
 .InfoRad {
   margin: 10px;
-  
 }
 
 .tabBox {
   margin: 0;
-  position: static;
-  top: 20%;
-  left: 5%;
-  transform: translate(20%, 5%);
-  
+  position: absolute;
+  top: 55px;
+  left: 250px;
 }
 
+.tab-content {
+  width: 800px;
+  height: 500px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
