@@ -1,0 +1,18 @@
+.uppdrag-button-holder{
+    width: 50%;
+    position: absolute;
+    top: 25px;
+    right: 122px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ContentBox{
+    margin: 0;
+    position: absolute;
+    top: 72px;
+    left: 283px;
+    width:650px;
+}

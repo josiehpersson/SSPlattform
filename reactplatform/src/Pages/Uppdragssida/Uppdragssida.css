@@ -49,3 +49,11 @@
   overflow: scroll;
   overflow-x: hidden;
 }
+
+.inforad-uppgifter{
+  color:#ffff;
+}
+
+.inforad-rubrik{
+  padding-right:15px;
+}
