@@ -31,9 +31,11 @@ function Header() {
           <a class="nav-link menulink">FAKTURA</a>
         </li>
         </Link>
+        <Link to="/tidrapport">
         <li class="nav-item">
           <a class="nav-link menulink">TIDRAPPORT</a>
         </li>
+        </Link>
         <li class="nav-item dropdown">
           <a
             class="nav-link menu-dropdown-link"

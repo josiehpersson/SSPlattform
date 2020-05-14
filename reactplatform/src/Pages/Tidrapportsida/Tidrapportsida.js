@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../../Komponenter/Navbar/Header';
 import Tidrapplåda from '../Uppdragssida/Offert';
 import Boll from '../../Komponenter/Bollar/Boll';
@@ -36,13 +37,31 @@ function Tidrapportsida (props) {
             <SearchBar />
           </div>
         <div className="tidrapport-låda-container">
+          <Link to="/tidrapportdetalj">
           <Tidrapplåda />
+          </Link>
+          <Link to="/tidrapportdetalj">
           <Tidrapplåda />
+          </Link>
+          <Link to="/tidrapportdetalj">
           <Tidrapplåda />
+          </Link>
+          <Link to="/tidrapportdetalj">
           <Tidrapplåda />
+          </Link>
+          <Link to="/tidrapportdetalj">
           <Tidrapplåda />
+          </Link>
+          <Link to="/tidrapportdetalj">
           <Tidrapplåda />
+          </Link>
+          <Link to="/tidrapportdetalj">
           <Tidrapplåda />
+          </Link>
+          <Link to="/tidrapportdetalj">
+          <Tidrapplåda />
+          </Link>
+
         </div>
         </div>
       </div>

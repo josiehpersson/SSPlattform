@@ -10,6 +10,8 @@ import Företag from './Pages/Företagssida/Företagssida';
 import Konsult from './Pages/Konsultsida/Konsultsida';
 import Faktura from './Pages/Fakturasida/Fakturasida';
 import Uppdrag from './Pages/Uppdragssida/Uppdragssida';
+import Tidrapport from './Pages/Tidrapportsida/Tidrapportsida';
+import TidrapportDetalj from './Pages/Tidrapportsida/Detaljtidrappsida';
 import App from './App';
 
 const rootElement = document.getElementById('root');
@@ -25,6 +27,8 @@ ReactDOM.render(
       <Route path="/konsult" component={Konsult} />
       <Route path="/faktura" component={Faktura} />
       <Route path="/uppdrag" component={Uppdrag} />
+      <Route path="/tidrapport" component={Tidrapport} />
+      <Route path="/tidrapportdetalj" component={TidrapportDetalj} />
     </Switch>
   </BrowserRouter>,
   rootElement
