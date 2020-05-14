@@ -13,14 +13,14 @@ import Uppdrag from './Pages/Uppdragssida/Uppdragssida';
 import Tidrapport from './Pages/Tidrapportsida/Tidrapportsida';
 import TidrapportDetalj from './Pages/Tidrapportsida/Detaljtidrappsida';
 import Inställningar from './Pages/Inställningarsida/Inställningar';
+import Statistik from './Pages/Statistiksida/Statistiksida';
 import App from './App';
 
 const rootElement = document.getElementById('root');
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-    <Route exact path="/" component={App} />
-      <Route exact path="/login" component={Login} />
+      <Route exact path="/" component={Login} />
       <Route path="/forgot" component={Forgot} />
       <Route path="/register" component={Register} />
       <Route path="/start" component={Start} />
@@ -31,6 +31,7 @@ ReactDOM.render(
       <Route path="/tidrapport" component={Tidrapport} />
       <Route path="/tidrapportdetalj" component={TidrapportDetalj} />
       <Route path="/inställningar" component={Inställningar} />
+      <Route path="/statistik" component={Statistik} />
     </Switch>
   </BrowserRouter>,
   rootElement

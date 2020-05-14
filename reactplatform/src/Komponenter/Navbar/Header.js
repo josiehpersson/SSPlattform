@@ -56,13 +56,17 @@ function Header() {
               <i class="fas fa-cog"></i> INSTÄLLNINGAR
             </a>
             </Link>
+            <Link to="/statistik">
             <a class="dropdown-item menulink-dropdown">
               <i class="far fa-chart-bar"></i> STATISTIK
             </a>
+            </Link>
             <div class="dropdown-divider"></div>
+            <Link to="/">
             <a class="dropdown-item menulink-dropdown">
               <i class="fas fa-sign-out-alt"></i> LOGGA UT
             </a>
+            </Link>
           </div>
         </li>
       </ul>
