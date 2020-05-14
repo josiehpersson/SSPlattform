@@ -32,3 +32,39 @@
     justify-content: space-around;
     margin-left: 120px;
 }
+
+.tidrapport-detalj-page-header {
+    font-size: 16pt;
+    z-index: 2;
+    color: white;
+    position: absolute;
+    top: 147px;
+    margin-left: 130px;
+}
+.information-container {
+    width: inherit;
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 20px;
+    color: #3B5360;
+    margin-left: 650px;
+    margin-bottom: -10px;
+    margin-top: 20px;
+}
+.tidrapport-detalj-button-holder {
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 250px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+.tidrapport-detalj-låda-container {
+margin-left: 80px;
+box-sizing: border-box;
+}
