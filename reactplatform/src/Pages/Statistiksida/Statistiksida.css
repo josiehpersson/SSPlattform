@@ -1,0 +1,58 @@
+.statistiksida-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.statistik-page-header {
+    font-size: 16pt;
+        z-index: 2;
+        color: white;
+        position: absolute;
+        top: 147px;
+        margin-left: 135px;
+}
+.statistik-låda-container {
+    display: flex;
+    width: 90%;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.statistik-låda {
+    background: #F3F3F3;
+opacity: 0.9;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+width: 300px;
+padding-bottom: 20px;
+margin-top: 20px;
+}
+.statistik-låda-header {
+    background: linear-gradient(270deg, #6DCF37 0%, #00A2FF 100%);
+    width: 300px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+}
+.container2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.statistik-låda-liten-text {
+    color: #3B5360;
+    font-size: 10pt;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.statistik-låda-stor-text {
+    color: #3B5360;
+    font-size: 18pt;
+    margin-left: 20px;
+}
