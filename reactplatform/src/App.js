@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import Header from './Komponenter/Navbar/Header';
+import TidrappLåda from './Komponenter/TidrappLåda/TidrappLåda';
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <TidrappLåda />
     </div>
   );
 }

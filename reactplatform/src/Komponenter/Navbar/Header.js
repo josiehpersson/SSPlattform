@@ -51,9 +51,11 @@ function Header() {
             <a class="dropdown-item menulink-dropdown">
               <i class="fas fa-users-cog"></i> ÅTKOMST
             </a>
+            <Link to="/inställningar">
             <a class="dropdown-item menulink-dropdown">
               <i class="fas fa-cog"></i> INSTÄLLNINGAR
             </a>
+            </Link>
             <a class="dropdown-item menulink-dropdown">
               <i class="far fa-chart-bar"></i> STATISTIK
             </a>

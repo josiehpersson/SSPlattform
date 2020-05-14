@@ -12,6 +12,7 @@ import Faktura from './Pages/Fakturasida/Fakturasida';
 import Uppdrag from './Pages/Uppdragssida/Uppdragssida';
 import Tidrapport from './Pages/Tidrapportsida/Tidrapportsida';
 import TidrapportDetalj from './Pages/Tidrapportsida/Detaljtidrappsida';
+import Inställningar from './Pages/Inställningarsida/Inställningar';
 import App from './App';
 
 const rootElement = document.getElementById('root');
@@ -29,6 +30,7 @@ ReactDOM.render(
       <Route path="/uppdrag" component={Uppdrag} />
       <Route path="/tidrapport" component={Tidrapport} />
       <Route path="/tidrapportdetalj" component={TidrapportDetalj} />
+      <Route path="/inställningar" component={Inställningar} />
     </Switch>
   </BrowserRouter>,
   rootElement
