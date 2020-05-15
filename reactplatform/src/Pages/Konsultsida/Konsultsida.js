@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../../Komponenter/Navbar/Header';
 import Konsultlåda from '../../Komponenter/KonsultLådor/Konsultlåda';
-import FrostatGlas from '../../Komponenter/UI-komponenter/Frostatglas';
 import Boll from '../../Komponenter/Bollar/Boll';
 import SearchBar from '../../Komponenter/UI-komponenter/SearchBar';
 import FilterPopup from '../../Komponenter/Filter/FilterPopup';
@@ -37,16 +36,16 @@ function KonsultSida(props) {
           <FilterPopup />
           <SearchBar />
         </div>
-      <div className="konsultlåda-container">
-        <Konsultlåda />
-        <Konsultlåda />
-        <Konsultlåda />
-        <Konsultlåda />
-        <Konsultlåda />
-        <Konsultlåda />
-        <Konsultlåda />
-        <Konsultlåda />
-      </div>
+        <div className="konsultlåda-container">
+          <Konsultlåda />
+          <Konsultlåda />
+          <Konsultlåda />
+          <Konsultlåda />
+          <Konsultlåda />
+          <Konsultlåda />
+          <Konsultlåda />
+          <Konsultlåda />
+        </div>
       </div>
       <MaskotBoll left="15%" bottom="-10%" />
       <Boll className="grönboll" right="60%" top="30%" />

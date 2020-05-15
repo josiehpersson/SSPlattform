@@ -18,8 +18,8 @@
   justify-content: space-between;
   align-self: center;
   width: 80%;
-  padding-right: 10px;
-  padding-left: 10px;
+  margin-right: -40px;
+  margin-left: 10px;
   margin-top: 100px;
   margin-bottom: 5px;
 }
@@ -30,14 +30,19 @@
   width: 50%;
   justify-content: space-between;
   margin-bottom: 0px;
+  z-index: 200;
 }
 
 .faktura-holder {
   display: flex;
   flex-flow: column nowrap;
-  width: 100%;
-  margin-top: -25px;
-  margin-left: 45px;
+  justify-items: center;
+  align-content: center;
+  width: 80%;
+  height: 100vh;
+  overflow-y: scroll;
+  margin-left: 50px;
+  border-top: 1px solid #a3a3a3;
 }
 
 .faktura-bollar {
@@ -47,4 +52,8 @@
   float: right;
   margin-top: -90px;
   margin-right: 80px;
+}
+
+.primärknapp {
+  z-index: 200;
 }

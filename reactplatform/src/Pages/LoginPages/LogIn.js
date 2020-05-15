@@ -5,7 +5,6 @@ import Logotype from '../../Komponenter/UI-komponenter/LoggaSvart';
 import Inputfält from '../../Komponenter/UI-komponenter/InputfältText';
 import PrimaryButton from '../../Komponenter/UI-komponenter/PrimaryButton';
 import SecondaryButton from '../../Komponenter/UI-komponenter/SecondaryButton';
-import FrostatGlas from '../../Komponenter/UI-komponenter/Frostatglas';
 import Boll from '../../Komponenter/Bollar/Boll';
 import MaskotBoll from '../../Komponenter/Bollar/maskotboll';
 import {
@@ -76,26 +75,29 @@ class LoginForm extends React.Component {
                 error={this.passwordValidator.invalid}
                 id="login-passinput"
               />
-
-              <Link to="/start">
-                <PrimaryButton
-                  text="Logga in"
-                  onClick={this.handleSubmit}
-                  isDisabled={this.formValidator.invalid}
-                  id="login-primbutton"
-                />
-              </Link>
-              <Link to="/register">
-                <SecondaryButton
-                  text="Registrera"
-                  isDisabled={false}
-                  id="login-secbutton"
-                />
-              </Link>
+              <div className="login-btn-holder">
+                <Link to="/start">
+                  <PrimaryButton
+                    text="Logga in"
+                    onClick={this.handleSubmit}
+                    isDisabled={this.formValidator.invalid}
+                    id="login-primbutton"
+                  />
+                </Link>
+                <Link to="/register">
+                  <SecondaryButton
+                    text="Registrera"
+                    isDisabled={false}
+                    id="login-secbutton"
+                  />
+                </Link>
+              </div>
             </form>
-            <Link to="/forgot">
-              <h1 className="forgot-link">Glömt lösenord?</h1>
-            </Link>
+            <div className="forgot-link-container">
+              <Link to="/forgot">
+                <h1 className="forgot-link">Glömt lösenord?</h1>
+              </Link>
+            </div>
 
             <MaskotBoll top="68%" right="1%" />
             <Boll className="grönboll" top="8%" left="5%" />
