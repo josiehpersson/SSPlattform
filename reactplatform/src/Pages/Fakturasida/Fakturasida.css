@@ -21,13 +21,15 @@
   margin-right: -40px;
   margin-left: 10px;
   margin-top: 100px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .filter-btn-holder {
   display: flex;
   flex-flow: row nowrap;
-  width: 50%;
+  width: 45%;
+  justify-content: center;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 0px;
   z-index: 200;

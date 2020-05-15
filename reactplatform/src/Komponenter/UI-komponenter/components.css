@@ -178,13 +178,14 @@ h6 {
 .form-control-sm,
 .fa-search:before {
   border-radius: 0;
-  box-shadow: inset 0px 17.8857px 17.8857px rgba(0, 0, 0, 0.25);
+  background-color: white;
   border: 1px solid #00a2ff;
 }
 
 .form-control-sm {
   border-left: none;
   border-radius: 0;
+  background-color: white;
 }
 
 .fa-search:before {
