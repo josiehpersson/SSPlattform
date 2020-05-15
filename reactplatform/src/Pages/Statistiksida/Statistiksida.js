@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../Komponenter/Navbar/Header';
 import Boll from '../../Komponenter/Bollar/Boll';
+import MaskotBoll from '../../Komponenter/Bollar/maskotboll';
 import './Statistiksida.css';
 
 function Statistiksida (props) {
@@ -74,6 +75,10 @@ function Statistiksida (props) {
 
         </div>
         </div>
+        <MaskotBoll left="15%" bottom="-10%" />
+      <Boll className="grönboll" bottom="-20%" right="20%" />
+      <Boll className="gulboll" top="68%" right="1%" />
+      <Boll className="blåboll" right="13%" top="20%" />
       </div>
     );
   }
