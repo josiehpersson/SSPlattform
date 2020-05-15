@@ -5,6 +5,7 @@ import FrostatGlas from '../../Komponenter/UI-komponenter/Frostatglas';
 import Boll from '../../Komponenter/Bollar/Boll';
 import SearchBar from '../../Komponenter/UI-komponenter/SearchBar';
 import FilterPopup from '../../Komponenter/Filter/FilterPopup';
+import MaskotBoll from '../../Komponenter/Bollar/maskotboll';
 import './Konsultsida.css';
 
 function KonsultSida(props) {
@@ -47,6 +48,10 @@ function KonsultSida(props) {
         <Konsultlåda />
       </div>
       </div>
+      <MaskotBoll left="15%" bottom="-10%" />
+      <Boll className="grönboll" right="60%" top="30%" />
+      <Boll className="gulboll" bottom="-25%" right="20%"  />
+      <Boll className="blåboll" top="68%" right="1%"  />
     </div>
   );
 }
