@@ -30,6 +30,7 @@
   width: 50%;
   justify-content: space-between;
   margin-bottom: 0px;
+  z-index: 200;
 }
 
 .faktura-holder {
@@ -47,4 +48,8 @@
   float: right;
   margin-top: -90px;
   margin-right: 80px;
+}
+
+.primärknapp {
+  z-index: 200;
 }
