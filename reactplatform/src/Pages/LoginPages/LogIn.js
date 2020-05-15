@@ -46,63 +46,62 @@ class LoginForm extends React.Component {
     });
   };
 
-
   render() {
     return (
       <div className="window-container">
         <div className="login-container">
-          <FrostatGlas id="login-glas" />
+          <div className="frostatGlas">
+            <form className="signin-form" onSubmit={this.handleSubmit}>
+              <Logotype />
 
-          <form className="signin-form" onSubmit={this.handleSubmit}>
-            <Logotype />
+              <h3 className="headline">Logga in</h3>
 
-            <h3 className="headline">Logga in</h3>
-
-            <Inputfält
-              type="text"
-              labeltext="E-mail"
-              name="mail"
-              value={this.state.mail}
-              onChange={this.onMailChange}
-              error={this.mailValidator.invalid}
-              id="login-mailinput"
-            />
-
-            <Inputfält
-              type="password"
-              className="login-input"
-              labeltext="Password"
-              name="password"
-              value={this.state.password}
-              onChange={this.onPasswordChange}
-              error={this.passwordValidator.invalid}
-              id="login-passinput"
-            />
-
-            <Link to="/start">
-              <PrimaryButton
-                text="Logga in"
-                onClick={this.handleSubmit}
-                isDisabled={this.formValidator.invalid}
-                id="login-primbutton"
+              <Inputfält
+                type="text"
+                labeltext="E-mail"
+                name="mail"
+                value={this.state.mail}
+                onChange={this.onMailChange}
+                error={this.mailValidator.invalid}
+                id="login-mailinput"
               />
-            </Link>
-            <Link to="/register">
-              <SecondaryButton
-                text="Registrera"
-                isDisabled={false}
-                id="login-secbutton"
-              />
-            </Link>
-          </form>
-          <Link to="/forgot">
-            <h1 className="forgot-link">Glömt lösenord?</h1>
-          </Link>
 
-          <MaskotBoll top="68%" right="1%" />
-          <Boll className="grönboll" top="8%" left="5%" />
-          <Boll className="gulboll" left="15%" bottom="-20%" />
-          <Boll className="blåboll" right="13%" top="-5%" />
+              <Inputfält
+                type="password"
+                className="login-input"
+                labeltext="Password"
+                name="password"
+                value={this.state.password}
+                onChange={this.onPasswordChange}
+                error={this.passwordValidator.invalid}
+                id="login-passinput"
+              />
+
+              <Link to="/start">
+                <PrimaryButton
+                  text="Logga in"
+                  onClick={this.handleSubmit}
+                  isDisabled={this.formValidator.invalid}
+                  id="login-primbutton"
+                />
+              </Link>
+              <Link to="/register">
+                <SecondaryButton
+                  text="Registrera"
+                  isDisabled={false}
+                  id="login-secbutton"
+                />
+              </Link>
+            </form>
+            <Link to="/forgot">
+              <h1 className="forgot-link">Glömt lösenord?</h1>
+            </Link>
+
+            <MaskotBoll top="68%" right="1%" />
+            <Boll className="grönboll" top="8%" left="5%" />
+            <Boll className="gulboll" left="15%" bottom="-20%" />
+            <Boll className="blåboll" right="13%" top="-5%" />
+          </div>
         </div>
       </div>
     );

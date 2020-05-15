@@ -10,34 +10,36 @@ import Rader from './Rader';
 function Åtkomst() {
   return (
     <div>
-      <Header />
-      <div className="header-filler">
-        <Boll
-          className="grönboll"
-          height="180px"
-          width="180px"
-          top="70px"
-          left="100px"
-          zIndex="1"
-        />
-        <h3 className="uppdrag-page-header">ÅTKOMST</h3>
-        <Boll
-          className="gulboll"
-          height="50px"
-          width="50px"
-          top="210px"
-          left="210px"
-          zIndex="2"
-        />
-      </div>
-
-      <div className="frostatGlas">
-        <div className="uppdrag-button-holder">
-          <SearchBar />
-          <PrimaryButton text="+ Lägg till " />
+      <div className="sida-container">
+        <Header />
+        <div className="header-filler">
+          <Boll
+            className="grönboll"
+            height="180px"
+            width="180px"
+            top="70px"
+            left="100px"
+            zIndex="1"
+          />
+          <h3 className="uppdrag-page-header">ÅTKOMST</h3>
+          <Boll
+            className="gulboll"
+            height="50px"
+            width="50px"
+            top="210px"
+            left="210px"
+            zIndex="2"
+          />
         </div>
-        <div className="ContentBox">
-          <Rader />
+
+        <div className="frostatGlas">
+          <div className="uppdrag-button-holder">
+            <SearchBar />
+            <PrimaryButton text="+ Lägg till " />
+          </div>
+          <div className="ContentBox">
+            <Rader />
+          </div>
         </div>
       </div>
     </div>

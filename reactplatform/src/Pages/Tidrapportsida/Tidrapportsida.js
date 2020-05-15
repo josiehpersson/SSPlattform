@@ -9,7 +9,7 @@ import './Tidrapportsida.css';
 
 function Tidrapportsida (props) {
     return (
-      <div className="tidrapportsida-container">
+      <div className="sida-container">
         <Header />
         <div className="header-filler">
           <Boll

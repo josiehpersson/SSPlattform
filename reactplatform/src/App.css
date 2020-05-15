@@ -20,6 +20,7 @@ body {
   display:flex;
   flex-flow: column nowrap;
   justify-content: center;
+  align-items: center;
   position: relative;
   background: rgba(255, 255, 255, 0.2);
   border: 0.5px solid #a3a3a3;
@@ -33,7 +34,6 @@ body {
   padding-bottom: 10px;
   box-sizing: border-box;
   align-self: center;
-  z-index: 0;
 }
 
 .header-filler {
@@ -67,4 +67,11 @@ body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: transparent; 
+}
+
+.sida-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
 }

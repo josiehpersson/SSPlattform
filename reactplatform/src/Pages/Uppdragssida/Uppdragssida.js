@@ -31,7 +31,7 @@ function Uppdragssida() {
   };
 
   return (
-    <div className="uppdragssida-container">
+    <div className="sida-container">
       <Header />
       <div className="header-filler">
         <Boll

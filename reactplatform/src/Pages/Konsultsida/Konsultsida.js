@@ -9,7 +9,7 @@ import './Konsultsida.css';
 
 function KonsultSida(props) {
   return (
-    <div className="konsultsida-container">
+    <div className="sida-container">
       <Header />
       <div className="header-filler">
         <Boll

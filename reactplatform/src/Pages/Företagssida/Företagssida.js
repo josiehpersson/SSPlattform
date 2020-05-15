@@ -8,7 +8,7 @@ import './Företagssida.css';
 
 function FöretagSida(props) {
     return (
-      <div className="företagsida-container">
+      <div className="sida-container">
         <Header />
         <div className="header-filler">
           <Boll

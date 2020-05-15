@@ -104,81 +104,81 @@ class Register extends React.Component {
     return (
       <div className="window-container">
         <div className="register-container">
-          <FrostatGlas id="register-glas" />
+          <div className="frostatGlas">
+            <form className="register-form" onSubmit={this.handleSubmit}>
+              <h3 className="headline">Registrera nytt konto</h3>
 
-          <form className="register-form" onSubmit={this.handleSubmit}>
-            <h3 className="headline">Registrera nytt konto</h3>
-
-            <Inputfält
-              type="text"
-              labeltext="Förnamn"
-              name="firstName"
-              value={this.state.firstName}
-              onChange={this.onFirstNameChange}
-              error={this.firstNameValidator.invalid}
-              id="register-firstNameInput"
-            />
-
-            <Inputfält
-              type="text"
-              labeltext="Efternamn"
-              name="lastName"
-              value={this.state.lastName}
-              onChange={this.onLastNameChange}
-              error={this.lastNameValidator.invalid}
-              id="register-lastNameInput"
-            />
-
-            <Inputfält
-              type="text"
-              labeltext="E-mail"
-              name="mail"
-              value={this.state.mail}
-              onChange={this.onMailChange}
-              id="register-mailInput"
-            />
-
-            <Inputfält
-              type="text"
-              labeltext="Telefon"
-              placeholder="xxx-xxx xxx xxx"
-              name="phone"
-              value={this.state.phone}
-              onChange={this.onPhoneChange}
-              id="register-phoneInput"
-            />
-
-            <Inputfält
-              type="password"
-              labeltext="Lösenord"
-              name="password"
-              value={this.state.password}
-              onChange={this.onPasswordChange}
-              error={this.passwordValidator.invalid}
-              id="register-passwordInput"
-            />
-
-            <Link to="/">
-              <PrimaryButton
-                text="SKICKA"
-                onClick={this.handleSubmit}
-                isDisabled={this.formValidator.invalid}
-                id="register-primbutton"
+              <Inputfält
+                type="text"
+                labeltext="Förnamn"
+                name="firstName"
+                value={this.state.firstName}
+                onChange={this.onFirstNameChange}
+                error={this.firstNameValidator.invalid}
+                id="register-firstNameInput"
               />
-            </Link>
-            <Link to="/">
-              <SecondaryButton
-                text="AVBRYT"
-                onClick={this.handleCancel}
-                isDisabled={false}
-                id="register-secbutton"
+
+              <Inputfält
+                type="text"
+                labeltext="Efternamn"
+                name="lastName"
+                value={this.state.lastName}
+                onChange={this.onLastNameChange}
+                error={this.lastNameValidator.invalid}
+                id="register-lastNameInput"
               />
-            </Link>
-          </form>
-          <MaskotBoll top="68%" right="1%" />
-          <Boll className="grönboll" top="8%" left="5%" />
-          <Boll className="gulboll" left="15%" bottom="-20%" />
-          <Boll className="blåboll" right="13%" top="-5%" />
+
+              <Inputfält
+                type="text"
+                labeltext="E-mail"
+                name="mail"
+                value={this.state.mail}
+                onChange={this.onMailChange}
+                id="register-mailInput"
+              />
+
+              <Inputfält
+                type="text"
+                labeltext="Telefon"
+                placeholder="xxx-xxx xxx xxx"
+                name="phone"
+                value={this.state.phone}
+                onChange={this.onPhoneChange}
+                id="register-phoneInput"
+              />
+
+              <Inputfält
+                type="password"
+                labeltext="Lösenord"
+                name="password"
+                value={this.state.password}
+                onChange={this.onPasswordChange}
+                error={this.passwordValidator.invalid}
+                id="register-passwordInput"
+              />
+
+              <Link to="/">
+                <PrimaryButton
+                  text="SKICKA"
+                  onClick={this.handleSubmit}
+                  isDisabled={this.formValidator.invalid}
+                  id="register-primbutton"
+                />
+              </Link>
+              <Link to="/">
+                <SecondaryButton
+                  text="AVBRYT"
+                  onClick={this.handleCancel}
+                  isDisabled={false}
+                  id="register-secbutton"
+                />
+              </Link>
+            </form>
+            <MaskotBoll top="68%" right="1%" />
+            <Boll className="grönboll" top="8%" left="5%" />
+            <Boll className="gulboll" left="15%" bottom="-20%" />
+            <Boll className="blåboll" right="13%" top="-5%" />
+          </div>
         </div>
       </div>
     );

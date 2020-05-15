@@ -19,7 +19,7 @@ class Inställningarsida extends React.Component {
   }
   render() {
     return (
-      <div className="inställningar-container">
+      <div className="sida-container">
         <Header />
         <div className="header-filler">
           <Boll

@@ -17,7 +17,7 @@ class Detaljtidrapportsida extends React.Component {
     render() {
 
         return (
-          <div className="tidrapportsida-container">
+          <div className="sida-container">
             <Header />
             <div className="header-filler">
               <Boll
