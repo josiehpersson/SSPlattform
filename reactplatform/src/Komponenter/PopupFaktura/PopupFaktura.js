@@ -10,7 +10,7 @@ function PopupFaktura(props) {
   const toggle = () => setModal(!modal);
 
   return (
-    <div className="faktura-holder">
+    <div className="popup-faktura-holder">
       <FakturaLåda onClick={toggle} />
       <Modal isOpen={modal} toggle={toggle} className="popup-faktura-container">
         <ModalHeader toggle={toggle} className="popup-faktura-header">

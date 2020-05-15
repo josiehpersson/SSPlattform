@@ -31,8 +31,9 @@
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-left: 440px;
+  margin-left: 350px;
   margin-top: 100px;
+  padding-bottom: 10px;
 }
 
 .konsultlåda-container {
@@ -40,6 +41,8 @@
   flex-flow: row wrap;
   justify-content: space-evenly;
   width: 700px;
+  height: 100vh;
+  overflow-y: scroll;
   margin-top: 5px;
-  margin-left: 90px;
+  border-top: 1px solid #a3a3a3;
 }

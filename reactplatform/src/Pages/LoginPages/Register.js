@@ -4,7 +4,6 @@ import './LoginPages.css';
 import Inputfält from '../../Komponenter/UI-komponenter/InputfältText';
 import PrimaryButton from '../../Komponenter/UI-komponenter/PrimaryButton';
 import SecondaryButton from '../../Komponenter/UI-komponenter/SecondaryButton';
-import FrostatGlas from '../../Komponenter/UI-komponenter/Frostatglas';
 import Boll from '../../Komponenter/Bollar/Boll';
 import MaskotBoll from '../../Komponenter/Bollar/maskotboll';
 import {
@@ -157,22 +156,24 @@ class Register extends React.Component {
                 id="register-passwordInput"
               />
 
-              <Link to="/">
-                <PrimaryButton
-                  text="SKICKA"
-                  onClick={this.handleSubmit}
-                  isDisabled={this.formValidator.invalid}
-                  id="register-primbutton"
-                />
-              </Link>
-              <Link to="/">
-                <SecondaryButton
-                  text="AVBRYT"
-                  onClick={this.handleCancel}
-                  isDisabled={false}
-                  id="register-secbutton"
-                />
-              </Link>
+              <div className="login-btn-holder">
+                <Link to="/">
+                  <PrimaryButton
+                    text="SKICKA"
+                    onClick={this.handleSubmit}
+                    isDisabled={this.formValidator.invalid}
+                    id="register-primbutton"
+                  />
+                </Link>
+                <Link to="/">
+                  <SecondaryButton
+                    text="AVBRYT"
+                    onClick={this.handleCancel}
+                    isDisabled={false}
+                    id="register-secbutton"
+                  />
+                </Link>
+              </div>
             </form>
             <MaskotBoll top="68%" right="1%" />
             <Boll className="grönboll" top="8%" left="5%" />

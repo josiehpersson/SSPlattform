@@ -46,12 +46,30 @@ class Inställningarsida extends React.Component {
             <div className="inställningar-header">
               <p>{this.state.titel || 'FÖRETAGSNAMN'}</p>
             </div>
-            <Inputfält labeltext="Företag" />
-            <Inputfält labeltext="Kontaktperson" />
-            <Inputfält labeltext="VAT-nummer" />
-            <Inputfält labeltext="Bransch" />
-            <Inputfält labeltext="Epost" />
-            <Inputfält labeltext="Telefon" />
+            <Inputfält
+              labeltext="Företag"
+              placeholder={this.state.titel || 'FÖRETAGSNAMN'}
+            />
+            <Inputfält
+              labeltext="Kontaktperson"
+              placeholder={this.state.kontaktperson || 'KONTAKTPERSON'}
+            />
+            <Inputfält
+              labeltext="VAT-nummer"
+              placeholder={this.state.VATnr || 'VAT-NUMMER'}
+            />
+            <Inputfält
+              labeltext="Bransch"
+              placeholder={this.state.bransch || 'IT'}
+            />
+            <Inputfält
+              labeltext="Epost"
+              placeholder={this.state.epost || 'epost@epost.se'}
+            />
+            <Inputfält
+              labeltext="Telefon"
+              placeholder={this.state.telefon || '070-695847'}
+            />
           </div>
         </div>
         <div className="inställningar-btn-holder">

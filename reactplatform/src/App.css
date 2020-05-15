@@ -17,7 +17,7 @@ body {
 }
 
 .frostatGlas {
-  display:flex;
+  display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
@@ -28,7 +28,7 @@ body {
   box-shadow: inset 0px 15.3829px 15.3829px rgba(0, 0, 0, 0.25);
   width: 90vw;
   min-height: 100vh;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
   margin-bottom: 5px;
   padding-bottom: 10px;
@@ -51,7 +51,7 @@ body {
 }
 
 .frostatGlas::-webkit-scrollbar-thumb {
-  background: transparent; 
+  background: transparent;
 }
 
 /* width */
@@ -63,10 +63,10 @@ body {
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: transparent; 
+  background: transparent;
 }
 
 .sida-container {
