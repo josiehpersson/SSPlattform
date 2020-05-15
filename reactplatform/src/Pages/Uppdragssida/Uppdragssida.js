@@ -13,7 +13,6 @@ import {
   Col,
 } from 'reactstrap';
 import classnames from 'classnames';
-import SecondaryButton from '../../Komponenter/UI-komponenter/SecondaryButton';
 import PrimaryButton from '../../Komponenter/UI-komponenter/PrimaryButton';
 import SearchBar from '../../Komponenter/UI-komponenter/SearchBar';
 import InfoRadUppdrag from '../../Komponenter/UI-komponenter/InfoRadUppdrag';
@@ -61,7 +60,7 @@ function Uppdragssida() {
         </div>
         <div className="tabBox">
           <Nav tabs>
-            <NavItem>
+            <NavItem className="tabbar">
               <NavLink
                 className={classnames({ active: activeTab === '1' })}
                 onClick={() => {
@@ -71,7 +70,7 @@ function Uppdragssida() {
                 UPPDRAG
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="tabbar">
               <NavLink
                 className={classnames({ active: activeTab === '2' })}
                 onClick={() => {

@@ -26,6 +26,10 @@
   top: 120px;
 }
 
+.tabbar:hover {
+  cursor: pointer;
+}
+
 .tab-content {
   width: 800px;
   height: 500px;
