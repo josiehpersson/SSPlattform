@@ -64,11 +64,11 @@ function Tidrapportsida(props) {
             <Tidrapplåda />
           </Link>
         </div>
+      </div>
         <MaskotBoll  left="15%" bottom="10%" />
       <Boll className="grönboll" top="95%" right="60%" />
       <Boll className="gulboll" top="100%" right="1%" />
       <Boll className="blåboll" right="13%" top="30%" />
-      </div>
     </div>
   );
 }
