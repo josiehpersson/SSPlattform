@@ -2,6 +2,7 @@ import React from 'react';
 import Inputfält from '../../Komponenter/UI-komponenter/InputfältText';
 import Header from '../../Komponenter/Navbar/Header';
 import Boll from '../../Komponenter/Bollar/Boll';
+import MaskotBoll from '../../Komponenter/Bollar/maskotboll';
 import SecondaryButton from '../../Komponenter/UI-komponenter/SecondaryButton';
 import PrimaryButton from '../../Komponenter/UI-komponenter/PrimaryButton';
 import './Inställningar.css';
@@ -76,6 +77,10 @@ class Inställningarsida extends React.Component {
           <SecondaryButton text="AVBRYT" />
           <PrimaryButton text="SPARA" />
         </div>
+        <MaskotBoll top="68%" right="1%" />
+      <Boll className="grönboll" bottom="-20%" right="20%" />
+      <Boll className="gulboll" left="15%" bottom="-10%" />
+      <Boll className="blåboll" right="13%" top="20%" />
       </div>
     );
   }

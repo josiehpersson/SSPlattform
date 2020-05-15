@@ -4,6 +4,7 @@ import Företagslåda from '../../Komponenter/FöretagsLådor/Företagslåda';
 import Boll from '../../Komponenter/Bollar/Boll';
 import SearchBar from '../../Komponenter/UI-komponenter/SearchBar';
 import FilterPopup from '../../Komponenter/Filter/FilterPopup';
+import MaskotBoll from '../../Komponenter/Bollar/maskotboll';
 import './Företagssida.css';
 
 function FöretagSida(props) {
@@ -46,6 +47,10 @@ function FöretagSida(props) {
           <Företagslåda />
         </div>
         </div>
+        <MaskotBoll top="68%" right="1%" />
+      <Boll className="grönboll" bottom="-40%" right="20%" />
+      <Boll className="gulboll" left="15%" bottom="-10%" />
+      <Boll className="blåboll" right="13%" top="-5%" />
       </div>
     );
   }

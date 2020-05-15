@@ -46,6 +46,10 @@ function Åtkomst() {
           </div>
         </div>
       </div>
+      <MaskotBoll left="15%" bottom="-10%" />
+      <Boll className="grönboll" bottom="-20%" right="20%" />
+      <Boll className="gulboll" top="68%" right="1%" />
+      <Boll className="blåboll" right="13%" top="20%" />
     </div>
   );
 }

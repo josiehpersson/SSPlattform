@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../../Komponenter/Navbar/Header';
 import Tidrapplåda from '../Uppdragssida/Offert';
 import Boll from '../../Komponenter/Bollar/Boll';
+import MaskotBoll from '../../Komponenter/Bollar/maskotboll';
 import SearchBar from '../../Komponenter/UI-komponenter/SearchBar';
 import FilterPopup from '../../Komponenter/Filter/FilterPopup';
 import './Tidrapportsida.css';
@@ -63,6 +64,10 @@ function Tidrapportsida(props) {
             <Tidrapplåda />
           </Link>
         </div>
+        <MaskotBoll  left="15%" bottom="10%" />
+      <Boll className="grönboll" top="95%" right="60%" />
+      <Boll className="gulboll" top="100%" right="1%" />
+      <Boll className="blåboll" right="13%" top="30%" />
       </div>
     </div>
   );
