@@ -3,7 +3,7 @@ import './LoginPages.css';
 import Inputfält from '../../Komponenter/UI-komponenter/InputfältText';
 import PrimaryButton from '../../Komponenter/UI-komponenter/PrimaryButton';
 import SecondaryButton from '../../Komponenter/UI-komponenter/SecondaryButton';
-import FrostatGlas from '../../Komponenter/UI-komponenter/Frostatglas';
+import { Link } from 'react-router-dom';
 import Boll from '../../Komponenter/Bollar/Boll';
 import MaskotBoll from '../../Komponenter/Bollar/maskotboll';
 import {
@@ -58,20 +58,24 @@ class Forgotform extends React.Component {
               error={this.mailValidator.invalid}
               id="forgot-mailinput"
             />
-
-            <PrimaryButton
-              text="Skicka"
-              onClick={this.handleSubmit}
-              isDisabled={this.formValidator.invalid}
-              id="forgot-primbutton"
-            />
-
-            <SecondaryButton
-              text="Tillbaka"
-              onClick={this.handleCancel}
-              isDisabled={false}
-              id="forgot-secbutton"
-            />
+            <div className="login-btn-holder">
+              <Link to="/">
+                <PrimaryButton
+                  text="Skicka"
+                  onClick={this.handleSubmit}
+                  isDisabled={this.formValidator.invalid}
+                  id="forgot-primbutton"
+                />
+              </Link>
+              <Link to="/">
+                <SecondaryButton
+                  text="Tillbaka"
+                  onClick={this.handleCancel}
+                  isDisabled={false}
+                  id="forgot-secbutton"
+                />
+              </Link>
+            </div>
           </form>
 
           <MaskotBoll top="68%" right="1%" />

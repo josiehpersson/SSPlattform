@@ -33,11 +33,15 @@ function Åtkomst() {
         </div>
 
         <div className="frostatGlas">
-          <div className="uppdrag-button-holder">
+          <div className="åtkomst-button-holder">
             <SearchBar />
             <PrimaryButton text="+ Lägg till " />
           </div>
           <div className="ContentBox">
+            <Rader />
+            <Rader />
+            <Rader />
+            <Rader />
             <Rader />
           </div>
         </div>

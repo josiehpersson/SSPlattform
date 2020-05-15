@@ -41,8 +41,9 @@ function Fakturasida(props) {
 
                 </div>
             </div>
+            
 
-            </div>
+        </div>
     )
 }
 

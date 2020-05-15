@@ -1,18 +1,18 @@
-.uppdrag-button-holder{
-    width: 50%;
-    position: absolute;
-    top: 25px;
-    right: 122px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
+.åtkomst-button-holder {
+  width: 50%;
+  margin-top: 65px;
+  padding-bottom: 10px;
+  margin-right: -300px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.ContentBox{
-    margin: 0;
-    position: absolute;
-    top: 72px;
-    left: 283px;
-    width:650px;
+.ContentBox {
+  position: relative;
+  height: 100vh;
+  width: 650px;
+  overflow-x: scroll;
+  border-top: 1px solid #a3a3a3;
 }
