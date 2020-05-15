@@ -38,4 +38,24 @@
 
 .inforad-rubrik {
   padding-right: 15px;
+  color: #3b5360;
+}
+
+.inforad-rubrik:hover {
+  color: #3b5360;
+  text-decoration-line: none !important;
+}
+
+.inforad-uppgifter:hover {
+  color: #ffff;
+  text-decoration-line: none !important;
+}
+
+.inforad-rubrik:focus {
+  color: #3b5360;
+  text-decoration-line: none !important;
+}
+.inforad-rubrik:active {
+  color: #3b5360;
+  text-decoration-line: none !important;
 }
