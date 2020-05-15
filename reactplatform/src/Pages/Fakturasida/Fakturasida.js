@@ -41,7 +41,10 @@ function Fakturasida(props) {
 
                 </div>
             </div>
-
+            <MaskotBoll top="68%" right="1%" />
+      <Boll className="grönboll" bottom="-40%" right="20%" />
+      <Boll className="gulboll" left="35%" bottom="-10%" />
+      <Boll className="blåboll" left="13%" bottom="-40%" />
             </div>
     )
 }
