@@ -55,9 +55,13 @@
   flex-flow: row nowrap;
   padding-top: 20px;
   color: #3b5360;
-  margin-left: 650px;
+  margin-left: 147px;
   margin-bottom: -10px;
-  margin-top: 20px;
+  margin-top: 104px;
+}
+
+.information-container p{
+  z-index: 2;
 }
 .frostatGlas {
   display: flex;
@@ -111,4 +115,17 @@
   width: 27px;
   height: 27px;
   padding: 7px;
+}
+.weekDays{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  top: 46px;
+}
+
+.weekDay{
+  float:left;
+  padding-left: 43px;
 }

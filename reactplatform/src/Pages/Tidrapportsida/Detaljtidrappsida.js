@@ -29,6 +29,10 @@ class Detaljtidrapportsida extends React.Component {
             zIndex="1"
           />
           <h3 className="tidrapport-detalj-page-header">TIDRAPPORT</h3>
+          <div className="information-container">
+            <p>{this.state.name || 'Anna'}</p>
+            <p>{this.state.ID || '#3456'}</p>
+          </div>
           <Boll
             className="gulboll"
             height="50px"
@@ -38,7 +42,19 @@ class Detaljtidrapportsida extends React.Component {
             zIndex="2"
           />
         </div>
+        <div className="frostatGlas">
 
+
+          <div className="tidrapport-detalj-låda-container">
+            <ul className="weekDays">
+              <li className="weekDay">Måndag</li>
+              <li className="weekDay">Tisdag</li>
+              <li className="weekDay">Onsdag</li>
+              <li className="weekDay">Torsdag</li>
+              <li className="weekDay">Fredag</li>
+              <li className="weekDay">Lördag</li>
+              <li className="weekDay">Söndag</li>
+            </ul>
         <div className="frostatGlas">
           <div className="information-container">
             <p>{this.state.name || 'Anna'}</p>
