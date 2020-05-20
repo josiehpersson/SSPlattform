@@ -7,6 +7,7 @@ import MaskotBoll from '../../Komponenter/Bollar/maskotboll';
 import SearchBar from '../../Komponenter/UI-komponenter/SearchBar';
 import FilterPopup from '../../Komponenter/Filter/FilterPopup';
 import './Tidrapportsida.css';
+import FakturaBoll from '../../Komponenter/PopupFaktura/Fakturaboll';
 
 function Tidrapportsida(props) {
   return (
@@ -30,6 +31,11 @@ function Tidrapportsida(props) {
           left="210px"
           zIndex="2"
         />
+
+        <div className="tidrapp-bollar">
+          <FakturaBoll />
+          <FakturaBoll className="gulboll" bottom="40%" right="20%" />
+        </div>
       </div>
 
       <div className="frostatGlas">
@@ -65,7 +71,7 @@ function Tidrapportsida(props) {
           </Link>
         </div>
       </div>
-        <MaskotBoll  left="15%" bottom="10%" />
+      <MaskotBoll left="15%" bottom="10%" />
       <Boll className="grönboll" top="95%" right="60%" />
       <Boll className="gulboll" top="100%" right="1%" />
       <Boll className="blåboll" right="13%" top="30%" />

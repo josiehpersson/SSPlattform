@@ -76,3 +76,7 @@ body {
   flex-flow: column nowrap;
   opacity: 1;
 }
+
+.modal-backdrop{
+  background-color:rgba(28, 27, 27, 0.7);
+}
