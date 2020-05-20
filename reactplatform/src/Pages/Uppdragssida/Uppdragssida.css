@@ -6,15 +6,16 @@
   margin-left: 125px;
 }
 .uppdrag-button-holder {
-  width: 50%;
+  width: 68%;
   position: relative;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: -180px;
-  margin-right: -390px;
+  top: 30px;
+  left: 294px;
 }
+
 .InfoRad {
   margin: 10px;
 }
