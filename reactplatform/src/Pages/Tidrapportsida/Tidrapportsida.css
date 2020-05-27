@@ -123,6 +123,7 @@
   overflow: hidden;
   position: relative;
   top: 46px;
+  z-index:2;
 }
 
 .weekDay{
