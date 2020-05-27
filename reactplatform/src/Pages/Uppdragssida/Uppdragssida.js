@@ -5,10 +5,6 @@ import {
   Nav,
   NavItem,
   NavLink,
-  Card,
-  Button,
-  CardTitle,
-  CardText,
   Row,
   Col,
 } from 'reactstrap';
@@ -22,6 +18,8 @@ import Boll from '../../Komponenter/Bollar/Boll';
 import Offert from './Offert';
 import MaskotBoll from '../../Komponenter/Bollar/maskotboll';
 import FilterPopup from '../../Komponenter/Filter/FilterPopup';
+import SkapaUppdrag from './PopupSkapa';
+
 function Uppdragssida() {
   const [activeTab, setActiveTab] = useState('1');
 
@@ -55,7 +53,7 @@ function Uppdragssida() {
       <div className="frostatGlas">
         <div className="tabBox">
           <div className="uppdrag-button-holder">
-            <PrimaryButton text="+ SKAPA " />
+            <SkapaUppdrag />
             <FilterPopup />
             <SearchBar />
           </div>

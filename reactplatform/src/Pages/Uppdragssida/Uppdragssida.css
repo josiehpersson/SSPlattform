@@ -65,3 +65,51 @@
   color: #3b5360;
   text-decoration-line: none !important;
 }
+
+.popup-nytt-uppdrag-container {
+  display: flex;
+  flex-flow: row;
+  box-sizing: border-box;
+}
+
+.popup-nytt-uppdrag-header {
+  display: flex;
+  flex-flow: row;
+  width: inherit;
+  height: 75px;
+  margin-top: 0px;
+  text-align: start;
+  padding-left: 20px;
+  background: #6dcf37;
+  color: white;
+  font-size: 18pt;
+}
+
+.nytt-uppdrag-rubrik {
+  position: absolute;
+  z-index: 9;
+  left: 185px;
+  top: 93px;
+}
+
+.popup-nytt-uppdrag-body {
+  display: flex;
+  flex-flow: column nowrap;
+  width: inherit;
+  justify-content: space-between;
+  margin-top: 120px;
+  padding-bottom: 20px;
+}
+
+.skapa-nytt-uppdrag-inputcontainer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.skapa-nytt-uppdrag-footer {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: space-evenly;
+}

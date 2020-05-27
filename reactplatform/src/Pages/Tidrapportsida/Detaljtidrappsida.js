@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../../Komponenter/Navbar/Header';
 import Tidrapplåda from '../../Komponenter/TidrappLåda/TidrappLåda';
 import Boll from '../../Komponenter/Bollar/Boll';
@@ -74,8 +75,12 @@ class Detaljtidrapportsida extends React.Component {
         </div>
         <div className="tidrapport-detalj-button-holder">
           <PopupKommentar />
+          <Link to="/tidrapport">
           <PrimaryButton text="GODKÄNN" />
+          </Link>
        
+        </div>
+        </div>
         </div>
         <MaskotBoll top="68%" right="1%" />
         <Boll className="grönboll" bottom="-40%" right="20%" />
