@@ -42,7 +42,19 @@ class Detaljtidrapportsida extends React.Component {
             zIndex="2"
           />
         </div>
+        <div className="frostatGlas">
 
+
+          <div className="tidrapport-detalj-låda-container">
+            <ul className="weekDays">
+              <li className="weekDay">Måndag</li>
+              <li className="weekDay">Tisdag</li>
+              <li className="weekDay">Onsdag</li>
+              <li className="weekDay">Torsdag</li>
+              <li className="weekDay">Fredag</li>
+              <li className="weekDay">Lördag</li>
+              <li className="weekDay">Söndag</li>
+            </ul>
         <div className="frostatGlas">
           <div className="tidrapport-detalj-låda-container">
             <ul className="weekDays">
