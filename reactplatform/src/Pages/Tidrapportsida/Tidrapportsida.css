@@ -33,7 +33,7 @@
   width: 90%;
   height: 100vh;
   overflow-y: scroll;
-  border-top: 1px solid #A3A3A3;
+  border-top: 1px solid #a3a3a3;
 }
 .tidrapp-spacer {
   height: 100px;
@@ -55,9 +55,13 @@
   flex-flow: row nowrap;
   padding-top: 20px;
   color: #3b5360;
-  margin-left: 650px;
+  margin-left: 147px;
   margin-bottom: -10px;
-  margin-top: 20px;
+  margin-top: 104px;
+}
+
+.information-container p{
+  z-index: 2;
 }
 .frostatGlas {
   display: flex;
@@ -93,4 +97,37 @@
 .tidrapport-detalj-låda-container {
   margin-left: 80px;
   box-sizing: border-box;
+}
+
+.tidrapp-bollar {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 500px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 80px;
+}
+
+.vecko-nummer-text {
+  background: linear-gradient(180deg, #ebee47 4.17%, #00b2ff 100%);
+  box-shadow: 0px 17.8857px 35.7714px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  padding: 7px;
+}
+.weekDays{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  top: 46px;
+  z-index:2;
+
+}
+
+.weekDay{
+  float:left;
+  padding-left: 43px;
 }

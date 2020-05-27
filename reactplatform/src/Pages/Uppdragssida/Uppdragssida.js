@@ -53,12 +53,12 @@ function Uppdragssida() {
       </div>
 
       <div className="frostatGlas">
-        <div className="uppdrag-button-holder">
-          <PrimaryButton text="+ SKAPA " />
-          <FilterPopup />
-          <SearchBar />
-        </div>
         <div className="tabBox">
+          <div className="uppdrag-button-holder">
+            <PrimaryButton text="+ SKAPA " />
+            <FilterPopup />
+            <SearchBar />
+          </div>
           <Nav tabs>
             <NavItem className="tabbar">
               <NavLink
